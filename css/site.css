@@ -285,6 +285,8 @@ a:hover { color: #9ae6ff; }
   gap: .3rem;
   padding: .4rem .75rem;
   font-size: .8rem;
+  line-height: 1.2;
+  max-width: 100%;
 }
 .category-tag.is-active {
   color: #041018;
@@ -507,8 +509,34 @@ a:hover { color: #9ae6ff; }
 
 @media (max-width: 640px) {
   .footer-inner { flex-direction: column; align-items: flex-start; }
-  .category-tags { gap: .35rem; }
-  .category-tag { font-size: .75rem; padding: .35rem .65rem; }
+  .wrap { width: min(var(--max), calc(100% - 1.5rem)); }
+  .catalog-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .55rem;
+  }
+  .search-box.grow { min-width: 0; width: 100%; }
+  .search-box input { padding: .75rem 1rem; font-size: 1rem; }
+  .category-tags {
+    flex-wrap: nowrap;
+    gap: .4rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scroll-snap-type: x proximity;
+    margin-inline: -0.75rem;
+    padding: .15rem 0.75rem .45rem;
+    margin-bottom: .75rem;
+  }
+  .category-tag {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: .72rem;
+    padding: .42rem .7rem;
+    scroll-snap-align: start;
+  }
 }
 
 @media (max-width: 800px) {
