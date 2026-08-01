@@ -1,0 +1,31 @@
+Linux para noobs — website
+==========================
+
+This repository is the public site for Linux para noobs
+(https://www.linuxparanoobs.com/), associated with the YouTube channel
+https://www.youtube.com/@linuxparanoobs
+
+Software license
+----------------
+HTML, CSS, JavaScript, and the site structure in this repository are licensed
+under GPL-3.0-or-later (see `LICENSE`), unless a file says otherwise.
+
+Brand and mascot (not open-licensed)
+------------------------------------
+The Linux para noobs name, logo, mascot artwork, and related brand images
+(including files under `assets/` such as `mascota.png`, `mascota-guia.png`,
+`logo.png`, `favicon.png`, and the guide room backgrounds `room-inicio.png`,
+`room-empezar.png`, `room-elegir.png`, and `room-problemas.png`) are copyright
+of their owner.
+
+They are **not** licensed under the GPL. All rights reserved.
+You may view them on the official site and channel. You may not copy, modify,
+redistribute, or use them as the face of another channel, product, or site
+without written permission.
+
+Third-party marks
+-----------------
+Names such as Linux, Steam, DistroSea, and distribution names belong to their
+respective owners and are used here for identification only.
+
+This NOTICE is informational and is not legal advice.

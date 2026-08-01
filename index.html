@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Linux para noobs</title>
+  <meta name="description" content="¿Te dan ganas de usar Linux y no sabes por dónde empezar? Guía fácil: te recomendamos videos y qué Linux te conviene." />
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+<body>
+  <a class="skip-link" href="#guia">Saltar a la guía</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio">
+        <img src="assets/logo.png" alt="" width="48" height="28" />
+        <span>Linux para noobs</span>
+      </a>
+      <nav class="nav-main" aria-label="Principal">
+        <a href="#guia">1 · Guía</a>
+        <a href="#temas">2 · Temas</a>
+        <a href="#videos">3 · Videos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-layout reveal">
+        <div class="hero-text">
+          <p class="eyebrow">Guía del canal</p>
+          <h1>Linux para <em>noobs</em></h1>
+          <p class="lede">¿Te dan ganas de usar Linux y no sabes por dónde empezar? Aquí está todo lo que necesitas, fácil.</p>
+          <a class="btn btn-primary" href="#guia">Empezar la guía</a>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/mascota.png" alt="Mascota Linux para noobs" width="720" height="405" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="guia">
+      <div class="wrap narrow reveal">
+        <header class="section-head center">
+          <p class="section-kicker">La guía</p>
+          <h2>Cuéntame tu caso</h2>
+          <p>Toca lo que te suene. Te digo qué Linux te conviene y qué videos mirar.</p>
+        </header>
+        <div class="quiz-shell pnk-game" id="quiz-root"></div>
+      </div>
+    </section>
+
+    <section class="section section-split" id="temas">
+      <div class="wrap reveal">
+        <header class="section-head center">
+          <p class="section-kicker">Paso 2</p>
+          <h2>Elige un tema</h2>
+          <p>Diez carpetas claras. Toca una y abajo solo ves esos videos.</p>
+        </header>
+        <div class="topic-grid" id="topic-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="wrap reveal">
+        <header class="section-head center">
+          <p class="section-kicker">Paso 3</p>
+          <h2>Videos del tema</h2>
+          <p id="videos-subtitle">Elige un tema arriba, o busca por palabra.</p>
+        </header>
+        <div class="catalog-toolbar">
+          <label class="search-box grow">
+            <span class="sr-only">Buscar</span>
+            <input type="search" id="search" placeholder="Buscar video…" autocomplete="off" />
+          </label>
+          <button type="button" class="chip" id="clear-filter" hidden>Ver todos</button>
+        </div>
+        <div class="category-tags" id="category-tags" aria-label="Temas"></div>
+        <p class="result-meta" id="result-meta"></p>
+        <div class="video-list" id="video-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" width="40" height="24" />
+        <span>Linux para noobs</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@linuxparanoobs" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.reddit.com/r/linuxparanoobs/" target="_blank" rel="noopener noreferrer">Reddit</a>
+        <button type="button" class="footer-legal" id="open-impressum">Impressum / Aviso legal</button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="impressum-modal" hidden>
+    <div class="modal-backdrop" data-close-impressum></div>
+    <div class="modal-panel impressum-panel" role="dialog" aria-modal="true" aria-labelledby="impressum-title">
+      <header class="modal-head">
+        <h3 id="impressum-title">Aviso legal e Impressum</h3>
+        <button type="button" class="icon-btn" data-close-impressum aria-label="Cerrar">✕</button>
+      </header>
+      <p class="impressum-hint">Los datos del titular se muestran a continuación.</p>
+      <div class="impressum-body">
+        <p><strong>Linux para noobs</strong> es una guía educativa del canal. El contenido se ofrece «tal cual», sin garantías. Los videos y enlaces externos (YouTube, DistroSea, sitios de distros) son responsabilidad de sus operadores.</p>
+        <p><strong>Aviso legal en alemán:</strong> el bloque inferior es el Impressum obligatorio del operador en Alemania (§ 5 DDG, § 18 MStV). Kleinunternehmer: según § 19 UStG no se calcula IVA.</p>
+      </div>
+      <pre class="impressum-pre" id="impressum-details"></pre>
+    </div>
+  </div>
+
+  <div class="modal" id="player-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <header class="modal-head">
+        <h3 id="modal-title"></h3>
+        <button type="button" class="icon-btn" data-close aria-label="Cerrar">✕</button>
+      </header>
+      <div class="modal-embed" id="modal-embed"></div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <a class="btn btn-ghost" id="modal-yt" href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </div>
+  </div>
+
+  <script src="js/app.js" type="module"></script>
+  <script src="js/quiz.js" type="module"></script>
+</body>
+</html>

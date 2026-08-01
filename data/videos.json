@@ -1,0 +1,1288 @@
+{
+  "channel": "Linux para noobs",
+  "channelUrl": "https://www.youtube.com/@linuxparanoobs",
+  "site": "https://www.linuxparanoobs.com",
+  "categories": {
+    "primeros-pasos": {
+      "title": "Empieza aquí",
+      "emoji": "🌱",
+      "blurb": "Qué es Linux, mitos, miedos y por qué tanta gente lo está mirando.",
+      "order": 1
+    },
+    "elegir-linux": {
+      "title": "Elegir tu Linux",
+      "emoji": "🧭",
+      "blurb": "Zorin (fácil desde Windows), Mint (PC cansada), Bazzite (juegos). Qué encaja con tu PC.",
+      "order": 2
+    },
+    "instalar": {
+      "title": "Instalar y primeros pasos",
+      "emoji": "💾",
+      "blurb": "Instalación sin drama, carpetas, apps con un clic y errores típicos de principiante.",
+      "order": 3
+    },
+    "escritorio": {
+      "title": "Escritorio y personalización",
+      "emoji": "🖥️",
+      "blurb": "GNOME, KDE y las mil caras de Linux: cómo se ve y se siente tu sistema.",
+      "order": 4
+    },
+    "apps": {
+      "title": "Programas y tiendas",
+      "emoji": "📦",
+      "blurb": "Snap, Flatpak, espacio en disco y cómo instalar lo que necesitas.",
+      "order": 5
+    },
+    "juegos": {
+      "title": "Jugar en Linux",
+      "emoji": "🎮",
+      "blurb": "Steam, Proton, Bazzite y anticheats: qué sí corre y qué conviene revisar antes.",
+      "order": 6
+    },
+    "hardware": {
+      "title": "Hardware y drivers",
+      "emoji": "🔧",
+      "blurb": "Drivers Intel/AMD/NVIDIA, Wayland vs Xorg, pantallas negras y PCs que vuelven a vivir.",
+      "order": 7
+    },
+    "windows-en-linux": {
+      "title": "Apps de Windows en Linux",
+      "emoji": "🪟",
+      "blurb": "Bottles/Wine, VM, Office/Photoshop: cuándo hay alternativa y cuándo no.",
+      "order": 8
+    },
+    "estabilidad": {
+      "title": "Que no se rompa",
+      "emoji": "🛡️",
+      "blurb": "Actualizaciones, sistemas inmutables, copias de seguridad y qué hacer si algo falla.",
+      "order": 9
+    },
+    "libertad": {
+      "title": "Privacidad y libertad",
+      "emoji": "🔓",
+      "blurb": "Control, anuncios, identidad y el futuro de tu PC.",
+      "order": 10
+    }
+  },
+  "videos": [
+    {
+      "n": 1,
+      "title": "El oscuro secreto de la historia de la informatica",
+      "date": "2023-12-16",
+      "id": "I2sfzMCpVBo",
+      "url": "https://www.youtube.com/watch?v=I2sfzMCpVBo",
+      "desc": "¿Alguna vez has considerado cómo se ha quedado atrasada la informática en términos de software y por qué los sistemas operativos más utilizados en casa son prácticamente los mismos que hace años, con pequeñas modificaciones? En este vídeo explicamos las razones detrás de esto.",
+      "category": "libertad",
+      "tags": [
+        "historia",
+        "windows"
+      ],
+      "tip": "Por qué el software de casa casi no cambió en décadas."
+    },
+    {
+      "n": 2,
+      "title": "5 Mitos falsos de Linux",
+      "date": "2023-12-17",
+      "id": "BLJhI9PPHsg",
+      "url": "https://www.youtube.com/watch?v=BLJhI9PPHsg",
+      "desc": "¿Tiene virus? ¿No funciona correctamente? ¿Es complicado de utilizar? ¿No permite utilizar juegos o aplicaciones? En este breve video, desacreditaremos cinco falsos mitos sobre el sistema operativo Linux, creencias comunes entre muchas personas.",
+      "category": "primeros-pasos",
+      "tags": [
+        "mitos",
+        "miedos"
+      ],
+      "tip": "Virus, juegos, dificultad: desmontá los 5 mitos más comunes."
+    },
+    {
+      "n": 3,
+      "title": "El Linux mas FACIL, Instalación, uso y juegos (Zorin)",
+      "date": "2023-12-20",
+      "id": "xiIJX616SRI",
+      "url": "https://www.youtube.com/watch?v=xiIJX616SRI",
+      "desc": "Domina Linux en solo 5 minutos (Zorin) Instalación, uso y juegos ¡Descubre todo lo que puedes hacer!\n\nVisita zorin.com para descargarlo",
+      "category": "elegir-linux",
+      "tags": [
+        "zorin",
+        "instalar",
+        "facil"
+      ],
+      "tip": "Zorin Core (PC moderna) o Lite (PC vieja): apariencia tipo Windows/Mac y Steam Play."
+    },
+    {
+      "n": 4,
+      "title": "El Linux mas usado, Instalación, uso y juegos (Ubuntu)",
+      "date": "2023-12-24",
+      "id": "gbX11i7s5cY",
+      "url": "https://www.youtube.com/watch?v=gbX11i7s5cY",
+      "desc": "Domina Linux en solo 5 minutos (Ubuntu) Instalación, uso y juegos ¡Descubre todo lo que puedes hacer!\n\nVisita ubuntu.com para descargarlo",
+      "category": "elegir-linux",
+      "tags": [
+        "ubuntu",
+        "instalar"
+      ],
+      "tip": "Ubuntu: el Linux más conocido; instalación, uso y juegos."
+    },
+    {
+      "n": 5,
+      "title": "El Linux Futurista,  Instalación, uso y juegos (Fedora)",
+      "date": "2024-01-06",
+      "id": "GpWcSMWGzDo",
+      "url": "https://www.youtube.com/watch?v=GpWcSMWGzDo",
+      "desc": "Domina Linux en solo 5 minutos (Fedora) Instalación, uso y juegos ¡Descubre todo lo que puedes hacer!\n\nComandos para mejorar Fedora codecs para video y Steam:\n\n(Elimina el espacio despues de https:// la pc se reiniciara 2 veces)\n\nrpm-ostree install https:// mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -r\n\nrpm-ostree update --uninstall rpmfusion-free-release --install rpmfusion-free-release\n\nrm -rf ~/.cache/thumbnails/fail\n\nrpm-ostree install ffmpegthumbnailer libavcodec-freeworld steam-devices -r\n\nSOLO para instalar drivers NVIDIA:\n\nrpm-ostree install akmod-nvidia xorg-x11-drv-nvidia xorg-x11-drv-nvidia-cuda -r",
+      "category": "elegir-linux",
+      "tags": [
+        "fedora",
+        "instalar"
+      ],
+      "tip": "Fedora: el Linux más “al día” / futurista."
+    },
+    {
+      "n": 6,
+      "title": "\"Windows bajo asedio: El plan secreto del Proyecto Wine\"",
+      "date": "2024-01-16",
+      "id": "blFBP552vpg",
+      "url": "https://www.youtube.com/watch?v=blFBP552vpg",
+      "desc": "En este video, exploraremos cómo un proyecto aparentemente insignificante de hace casi tres décadas ha transformado completamente el panorama tecnológico en el que vivimos hoy en día.",
+      "category": "windows-en-linux",
+      "tags": [
+        "wine",
+        "compatibilidad"
+      ],
+      "tip": "Wine: cómo nació la idea de correr Windows en Linux."
+    },
+    {
+      "n": 7,
+      "title": "Install Davinci Resolve for Linux in 1 minute",
+      "date": "2024-05-11",
+      "id": "Nn9GePGD_so",
+      "url": "https://www.youtube.com/watch?v=Nn9GePGD_so",
+      "desc": "Here is the link to the valsolve.sh script: \n\nhttps://1drv.ms/u/c/804703b65cf01d72/EWxr1Z-CuEhCgvbKG_3KDjkBHjUBgpRrfdF_yDjpYLZAAQ?e=OZUVNY\n\nIt can be used in any Linux distribution compatible with Distrobox in its repository. The installation is almost fully automated, including the installation of Distrobox.\n\nSimply run the valsolv script in the terminal and it will take care of the rest. To run it, use the command sh valsolv.sh within the directory.\n\nIt will always download the latest stable version.",
+      "category": "apps",
+      "tags": [
+        "davinci",
+        "edicion"
+      ],
+      "tip": "Instalar DaVinci Resolve en Linux rápido."
+    },
+    {
+      "n": 8,
+      "title": "Es Windows 11 Windows XP con sobrepeso?",
+      "date": "2024-05-17",
+      "id": "kIsO-LgqK6o",
+      "url": "https://www.youtube.com/watch?v=kIsO-LgqK6o",
+      "desc": "Este video explora la evolución de los sistemas operativos de Windows desde su época dorada con Windows XP hasta la actualidad con Windows 11. Se destaca cómo Windows XP fue el último Windows auténtico, mientras que Windows 11 parece ser una copia con características innecesarias. Se examinan aspectos como el consumo de recursos, la seguridad, la estabilidad y la eficiencia de los sistemas operativos, comparando Windows con Linux y señalando cómo este último está ganando terreno en el mercado.",
+      "category": "libertad",
+      "tags": [
+        "windows",
+        "historia"
+      ],
+      "tip": "Windows 11 vs la época dorada de XP."
+    },
+    {
+      "n": 9,
+      "title": "Linux crece 10 años en 6 meses",
+      "date": "2024-05-19",
+      "id": "uEPgm5t42f8",
+      "url": "https://www.youtube.com/watch?v=uEPgm5t42f8",
+      "desc": "¿Puedes creer que Linux avanza tan rápido que incluso supera a cualquier otro avance informáticos conocido? Mira este video para entender cómo está sucediendo.",
+      "category": "primeros-pasos",
+      "tags": [
+        "avances",
+        "gaming"
+      ],
+      "tip": "Por qué Linux aceleró años de progreso en pocos meses."
+    },
+    {
+      "n": 10,
+      "title": "¡240 millones de PCs en peligro!",
+      "date": "2024-05-24",
+      "id": "7A88ixBbGKQ",
+      "url": "https://www.youtube.com/watch?v=7A88ixBbGKQ",
+      "desc": "En este inquietante video se revela una amenaza inminente para millones de computadoras en todo el mundo",
+      "category": "libertad",
+      "tags": [
+        "seguridad",
+        "windows"
+      ],
+      "tip": "Amenaza masiva a PCs: el costo de depender de un solo sistema."
+    },
+    {
+      "n": 11,
+      "title": "Instala Ubuntu en 60 segundos #linux #windows  #ubuntu",
+      "date": "2024-05-26",
+      "id": "TXbzZby6JSk",
+      "url": "https://www.youtube.com/watch?v=TXbzZby6JSk",
+      "desc": "En este video te mostramos cómo instalar Ubuntu en tan solo 60 segundos. No te pierdas mis otros videos!!!",
+      "category": "instalar",
+      "tags": [
+        "ubuntu",
+        "rapido"
+      ],
+      "tip": "Instalar Ubuntu en ~60 segundos (demo práctica)."
+    },
+    {
+      "n": 12,
+      "title": "Instala aplicaciones en Linux con un solo clic",
+      "date": "2024-05-30",
+      "id": "iGXe0MwUN18",
+      "url": "https://www.youtube.com/watch?v=iGXe0MwUN18",
+      "desc": "¿Cómo descargar aplicaciones en Linux de manera sencilla? Descúbrelo en este video donde te enseñamos todo lo que necesitas saber. ¡No te lo pierdas!",
+      "category": "apps",
+      "tags": [
+        "tienda",
+        "instalar"
+      ],
+      "tip": "Instalar aplicaciones en Linux con un solo clic."
+    },
+    {
+      "n": 13,
+      "title": "Las Mil Caras de Linux",
+      "date": "2024-06-06",
+      "id": "CQu905zfzGU",
+      "url": "https://www.youtube.com/watch?v=CQu905zfzGU",
+      "desc": "¿Sabías que Linux es increíblemente flexible y personalizable? En este video, te mostraré cómo puedes transformar tu experiencia en Linux con diferentes entornos de escritorio.",
+      "category": "escritorio",
+      "tags": [
+        "personalizacion",
+        "de"
+      ],
+      "tip": "Las mil caras de Linux: cambiar el escritorio cambia todo."
+    },
+    {
+      "n": 14,
+      "title": "Linux: Todo o Nada",
+      "date": "2024-06-14",
+      "id": "zgX3sfUXkig",
+      "url": "https://www.youtube.com/watch?v=zgX3sfUXkig",
+      "desc": "¿Te has encontrado alguna vez en la encrucijada de elegir entre lo último en tecnología y la máxima estabilidad para tu PC? En este video, exploramos el fascinante dilema al que se enfrentan los usuarios de Linux",
+      "category": "estabilidad",
+      "tags": [
+        "actualizaciones",
+        "estabilidad"
+      ],
+      "tip": "Lo último vs máxima estabilidad: el dilema real."
+    },
+    {
+      "n": 15,
+      "title": "¿Dónde están mis carpetas?",
+      "date": "2024-06-21",
+      "id": "BDOGuBet-IQ",
+      "url": "https://www.youtube.com/watch?v=BDOGuBet-IQ",
+      "desc": "En este video, exploramos el sistema de archivos de Ubuntu. Aprenderás a navegar por carpetas esenciales como home, .config y snap, acceder a dispositivos externos, y entender la importancia de los archivos ocultos.",
+      "category": "instalar",
+      "tags": [
+        "carpetas",
+        "ubuntu"
+      ],
+      "tip": "Dónde están tus carpetas: home, config y dispositivos."
+    },
+    {
+      "n": 16,
+      "title": "El GRAN problema de Ubuntu",
+      "date": "2024-06-29",
+      "id": "9DRyc-7Wmd4",
+      "url": "https://www.youtube.com/watch?v=9DRyc-7Wmd4",
+      "desc": "Ubuntu utiliza el formato Snap para instalar aplicaciones, lo que puede causar falta de algunas apps y problemas de rendimiento. Para acceder a una tienda de aplicaciones más amplia y optimizada, te muestro cómo instalar Flatpak y usar Flathub.\n\nComando para instalacion (quita el espacio entre https:// dl):\n\nsudo apt install flatpak gnome-software-plugin-flatpak; flatpak remote-add --if-not-exists flathub https:// dl.flathub.org/repo/flathub.flatpakrepo; reboot",
+      "category": "apps",
+      "tags": [
+        "ubuntu",
+        "snap"
+      ],
+      "tip": "El gran problema de Ubuntu con Snap (y alternativas)."
+    },
+    {
+      "n": 17,
+      "title": "Prueba Linux Gratis Online",
+      "date": "2024-07-07",
+      "id": "MbUuChvrTLM",
+      "url": "https://www.youtube.com/watch?v=MbUuChvrTLM",
+      "desc": "¿Te gustaría probar los sistemas operativos Linux más populares sin instalar nada y de manera gratuita? ¡Con un solo clic desde tu navegador puedes hacerlo! \n\nEn este video, exploraremos distribuciones ideales para principiantes.\n\nSitio Web:\nDistrosea.com",
+      "category": "primeros-pasos",
+      "tags": [
+        "probar",
+        "sin-instalar"
+      ],
+      "tip": "Probar Linux gratis online, sin tocar tu PC."
+    },
+    {
+      "n": 18,
+      "title": "El Lado Oscuro de Nvidia",
+      "date": "2024-07-14",
+      "id": "en9KE29ctUo",
+      "url": "https://www.youtube.com/watch?v=en9KE29ctUo",
+      "desc": "En este video, revelamos un oscuro secreto que Nvidia ha mantenido oculto durante años, y que ha afectado a innumerables usuarios de Linux.",
+      "category": "hardware",
+      "tags": [
+        "nvidia",
+        "drivers"
+      ],
+      "tip": "Por qué NVIDIA retrasó Wayland años: drivers cerrados y el coste para Linux."
+    },
+    {
+      "n": 19,
+      "title": "Convierte Tu PC en un Ladrillo",
+      "date": "2024-07-22",
+      "id": "-Glz1jPWgKg",
+      "url": "https://www.youtube.com/watch?v=-Glz1jPWgKg",
+      "desc": "¡Bienvenidos al futuro de la informática! En este video, exploraremos una idea revolucionaria que está cambiando la forma en que utilizamos nuestros PCs: los sistemas inmutables.",
+      "category": "estabilidad",
+      "tags": [
+        "inmutable"
+      ],
+      "tip": "Sistemas inmutables: la idea de un PC que casi no se rompe."
+    },
+    {
+      "n": 20,
+      "title": "Juega Sin Límites en Linux",
+      "date": "2024-07-25",
+      "id": "CkJFJWWKmnQ",
+      "url": "https://www.youtube.com/watch?v=CkJFJWWKmnQ",
+      "desc": "¿Cansado de las limitaciones de otros sistemas operativos para jugar tus juegos favoritos? En este video, te enseñaré cómo jugar cualquier juego en Linux de manera sencilla y eficiente. \n\nInstala la App Store en Ubuntu pegando esto en la terminal (elimina el espacio entre https:// dl):\n\nsudo apt install flatpak gnome-software-plugin-flatpak; flatpak remote-add --if-not-exists flathub https:// dl.flathub.org/repo/flathub.flatpakrepo; reboot\n\nLa PC se reiniciará y verás la App Store en el menú de aplicaciones.",
+      "category": "juegos",
+      "tags": [
+        "proton",
+        "steam"
+      ],
+      "tip": "Jugar casi cualquier juego en Linux."
+    },
+    {
+      "n": 21,
+      "title": "La Ignorancia y el Poder",
+      "date": "2024-08-02",
+      "id": "nCxaFgZOLu4",
+      "url": "https://www.youtube.com/watch?v=nCxaFgZOLu4",
+      "desc": "¿Alguna vez has aceptado como verdad absoluta la información de un YouTuber famoso sin cuestionarla? En este video, vamos a analizar y desmentir las afirmaciones erróneas sobre Linux que ha hecho un creador de contenido con casi 2 millones de suscriptores.\n\n⚠️ IMPORTANTE: Este video utiliza fragmentos del contenido original bajo el principio de uso justo para fines de crítica, comentario y análisis. No pretendemos infringir los derechos de autor y alentamos a los espectadores a visitar su canal para ver el contenido completo y formarse su propia opinión.",
+      "category": "primeros-pasos",
+      "tags": [
+        "mitos",
+        "desinformacion"
+      ],
+      "tip": "No creas todo lo que un YouTuber famoso dice de Linux."
+    },
+    {
+      "n": 22,
+      "title": "La PC Imposible",
+      "date": "2024-08-11",
+      "id": "NCv2rwfD8YI",
+      "url": "https://www.youtube.com/watch?v=NCv2rwfD8YI",
+      "desc": "Descubre cómo revivimos una vieja PC, desafiando las limitaciones de hardware y software con la ayuda de Linux. Desde la instalación de Ubuntu hasta optimizaciones extremas para gaming, streaming y diseño, esta historia real demuestra el poder de Linux para transformar cualquier equipo.\n\n*ACLARACIÓN: Se han utilizado imágenes y videos de diversas fuentes para recrear la historia. Además, el procesador de mi amigo es un Intel i5-4440, lanzado en 2013.\n\nSi deseas comprobar la autenticidad de la historia, te invito a visitarlo en Twitch bajo el nombre de usuario @potelvania.",
+      "category": "hardware",
+      "tags": [
+        "pc-vieja",
+        "rendimiento"
+      ],
+      "tip": "Revivir una PC “imposible” con Linux."
+    },
+    {
+      "n": 23,
+      "title": "Errores de Novato en Linux",
+      "date": "2024-08-16",
+      "id": "9TKR84oiPtQ",
+      "url": "https://www.youtube.com/watch?v=9TKR84oiPtQ",
+      "desc": "Bob, un usuario de toda la vida de Windows, se aventura en el mundo de Linux por primera vez. Con la taza de café en mano y nervios por doquier, elige ZorinOS, una distribución amigable para principiantes que se asemeja a Windows...",
+      "category": "instalar",
+      "tags": [
+        "errores",
+        "zorin",
+        "novato"
+      ],
+      "tip": "Errores típicos del novato al pasar desde Windows."
+    },
+    {
+      "n": 24,
+      "title": "Actualización bloquea miles de PCs",
+      "date": "2024-08-23",
+      "id": "P5499XRcC8A",
+      "url": "https://www.youtube.com/watch?v=P5499XRcC8A",
+      "desc": "¡Tu PC está bajo ataque! Microsoft acaba de lanzar una actualización que podría bloquear tu sistema, eliminando tu libertad digital. No te dejes atrapar: descubre cómo están forzando a millones a cambiar sus PCs por dispositivos controlados. ¡Es hora de rebelarse con Linux antes de que sea demasiado tarde!",
+      "category": "libertad",
+      "tags": [
+        "windows",
+        "actualizaciones"
+      ],
+      "tip": "Cuando una actualización de Windows te deja sin control."
+    },
+    {
+      "n": 25,
+      "title": "Top Linux 2024: El Mejor Reemplazo para Windows",
+      "date": "2024-08-31",
+      "id": "BfngCHrkQss",
+      "url": "https://www.youtube.com/watch?v=BfngCHrkQss",
+      "desc": "¿Estás buscando la mejor alternativa a Windows? En este video, te revelo las mejores distribuciones de Linux en 2024, desde opciones fáciles para principiantes hasta sistemas avanzados para usuarios expertos. Descubre cuál es el Linux ideal para ti y por qué uno de ellos podría cambiar por completo tu experiencia en la PC. ¡No te lo pierdas!",
+      "category": "elegir-linux",
+      "tags": [
+        "ranking",
+        "2024",
+        "principiantes"
+      ],
+      "tip": "Top Linux 2024: mejores reemplazos de Windows."
+    },
+    {
+      "n": 26,
+      "title": "Cómo WhatsApp te condenó sin que lo sepas",
+      "date": "2024-09-06",
+      "id": "nS5ZrKj9COY",
+      "url": "https://www.youtube.com/watch?v=nS5ZrKj9COY",
+      "desc": "Este video revela una inquietante verdad sobre la tecnología que usamos a diario y cómo podría estar afectando nuestra libertad. Descubre lo que las grandes empresas no quieren que sepas y lo que está en juego para el futuro.",
+      "category": "libertad",
+      "tags": [
+        "privacidad",
+        "whatsapp"
+      ],
+      "tip": "Cómo apps cotidianas pueden condicionar tu libertad digital."
+    },
+    {
+      "n": 27,
+      "title": "¿Usarías Tu PC Así?",
+      "date": "2024-09-20",
+      "id": "xuPmQnORbBo",
+      "url": "https://www.youtube.com/watch?v=xuPmQnORbBo",
+      "desc": "¿Te imaginas usar una computadora sin barra de inicio, sin escritorio lleno de iconos, y sin los clásicos botones de maximizar y minimizar? ¡En este video te muestro cómo el mundo de Linux desafía todo lo que creías saber sobre las PCs!",
+      "category": "escritorio",
+      "tags": [
+        "ux",
+        "filosofia"
+      ],
+      "tip": "¿Usarías un PC sin barra de inicio ni iconos clásicos?"
+    },
+    {
+      "n": 28,
+      "title": "Tu PC Nunca Volverá a Ser Igual",
+      "date": "2024-10-01",
+      "id": "LHwK4_zz9Ow",
+      "url": "https://www.youtube.com/watch?v=LHwK4_zz9Ow",
+      "desc": "¡Descubre cómo Valve está a punto de cambiarlo todo! En este video, revelamos la sorprendente tecnología ARM que podría llevar la velocidad y eficiencia de tu PC al siguiente nivel.",
+      "category": "hardware",
+      "tags": [
+        "arm",
+        "valve",
+        "futuro"
+      ],
+      "tip": "ARM + Valve: tu PC puede cambiar de verdad."
+    },
+    {
+      "n": 29,
+      "title": "¿Tu Dispositivo Funciona en Linux?",
+      "date": "2024-10-08",
+      "id": "biHf_7c3tWI",
+      "url": "https://www.youtube.com/watch?v=biHf_7c3tWI",
+      "desc": "Si has oído que instalar drivers en Linux es complicado, ¡piénsalo de nuevo! En este video, te revelo cómo la mayoría de los dispositivos funcionan sin necesidad de instalar controladores manualmente. ¿Y qué pasa con esos dispositivos especiales? ¡También te lo cuento!",
+      "category": "hardware",
+      "tags": [
+        "drivers",
+        "plug-and-play"
+      ],
+      "tip": "¿Tu dispositivo funciona en Linux? Muchas veces, sí."
+    },
+    {
+      "n": 30,
+      "title": "Lo que Nadie te Dice sobre los Windows Modificados",
+      "date": "2024-10-31",
+      "id": "mO3G7_47EJo",
+      "url": "https://www.youtube.com/watch?v=mO3G7_47EJo",
+      "desc": "¿Realmente estás seguro con un Windows recortado? En este video, exploramos la verdad inquietante detrás de sistemas como Tiny11 y TomexOS, sus riesgos ocultos, y por qué podrían no ser la solución de privacidad y rendimiento que esperabas.",
+      "category": "libertad",
+      "tags": [
+        "windows-modificado",
+        "riesgos"
+      ],
+      "tip": "La verdad de los Windows recortados (Tiny11, etc.)."
+    },
+    {
+      "n": 31,
+      "title": "El Precio de Perseguir un Sueño",
+      "date": "2025-04-27",
+      "id": "pcKKLQup1Kk",
+      "url": "https://www.youtube.com/watch?v=pcKKLQup1Kk",
+      "desc": "Durante mucho tiempo guardé silencio. \nNadie supo la verdad, hasta ahora.  \nTomar ciertas decisiones tiene consecuencias, este es el precio de perseguir un sueño.",
+      "category": "libertad",
+      "tags": [
+        "canal",
+        "historia"
+      ],
+      "tip": "El precio de perseguir un sueño (contexto del canal)."
+    },
+    {
+      "n": 32,
+      "title": "PewDiePie mató a Windows",
+      "date": "2025-05-01",
+      "id": "WT_x-xDSiLQ",
+      "url": "https://www.youtube.com/watch?v=WT_x-xDSiLQ",
+      "desc": "¿Harto de los errores de Windows y de que te espíen? PewDiePie ya se pasó a Linux. mira por qué, cómo funciona y cómo puedes hacerlo sin complicarte.",
+      "category": "primeros-pasos",
+      "tags": [
+        "motivacion",
+        "windows"
+      ],
+      "tip": "PewDiePie y el salto a Linux sin complicarte."
+    },
+    {
+      "n": 33,
+      "title": "Linux Mint: el Windows que nunca fue",
+      "date": "2025-05-09",
+      "id": "LE_7dBltT5E",
+      "url": "https://www.youtube.com/watch?v=LE_7dBltT5E",
+      "desc": "Juan creía que su PC estaba vieja…\nHasta que probó el verdadero sucesor de Windows 7.\nMás rápido, más claro, sin restricciones.\nY lo mejor: puedes probarlo sin borrar nada.\n\n🎬 mira el video para Jugar en Linux: https://www.youtube.com/watch?v=CkJFJWWKmnQ",
+      "category": "elegir-linux",
+      "tags": [
+        "mint",
+        "windows-like",
+        "facil"
+      ],
+      "tip": "Mint Cinnamon: el Linux que se siente como el Windows 7 que extrañabas, en PCs cansadas."
+    },
+    {
+      "n": 34,
+      "title": "Tu app de Windows en Linux fácil",
+      "date": "2025-05-16",
+      "id": "2chwH11hNE8",
+      "url": "https://www.youtube.com/watch?v=2chwH11hNE8",
+      "desc": "¿Crees que no se pueden correr apps de Windows en Linux? Te demuestro que sí, y con menos errores y más control. Sigue esta guía paso a paso para instalar y usar tus aplicaciones favoritas sin complicaciones. ¡Linux es más fácil de lo que imaginas!\n\nVIdeo de Juegos: https://www.youtube.com/watch?v=CkJFJWWKmnQ\n\n0:00 Introducción y desmontando mitos  \n1:37 ¿Realmente necesitas esa app?  \n2:24 Alternativas nativas en Linux  \n3:08 Usando Bottles para apps de Windows \n5:09 y si el problema es Windows?\n5:49 Diagnóstico y solución de errores  \n7:33 Control avanzado y seguridad  \n09:21 Opciones finales: máquina virtual y dual boot  \n10:08 Cierre y mensaje final",
+      "category": "windows-en-linux",
+      "tags": [
+        "wine",
+        "apps"
+      ],
+      "tip": "Correr tu app de Windows en Linux, paso a paso."
+    },
+    {
+      "n": 35,
+      "title": "¿Linux es el nuevo enemigo?",
+      "date": "2025-05-23",
+      "id": "R_9jKYoRfd8",
+      "url": "https://www.youtube.com/watch?v=R_9jKYoRfd8",
+      "desc": "No todos los Linux son libres. Y algunos, podrían quitarnos la libertad que prometieron.\n\nEl Linux más fácil: https://youtu.be/xiIJX616SRI\n\n00:00 – ¿Linux es el enemigo?  \n01:06 – Cuando ganar no es suficiente  \n03:18 – El peligro de un Linux sin libertad  \n04:51 – El Linux que vale la pena defender  \n06:06 – Tres posibles futuros  \n08:56 – La decisión está en tus manos",
+      "category": "libertad",
+      "tags": [
+        "libertad",
+        "distros"
+      ],
+      "tip": "No todos los Linux son iguales (ni todos son “libres”)."
+    },
+    {
+      "n": 36,
+      "title": "SteamOS ganó en silencio",
+      "date": "2025-05-30",
+      "id": "JBpntfxzZnU",
+      "url": "https://www.youtube.com/watch?v=JBpntfxzZnU",
+      "desc": "Valve acaba de superar a Windows en el terreno más importante: el gaming. Y Microsoft no ha dicho una palabra.\n\nEn este video te cuento qué está pasando, por qué es tan relevante…\ny te doy algo mejor: una forma de liberarte tú también.\n\n🔔 Suscríbete para ver el tutorial completo.\n👇 ¿Le darías una oportunidad a SteamOS?\n\n🎮 ¿Quieres ver cómo se juega en Linux sin límites?\nEste es el video que tienes que ver:\nhttps://www.youtube.com/watch?v=CkJFJWWKmnQ\n\n00:00 - El golpe silencioso a Windows  \n02:09 - ¿Qué es SteamOS y por qué importa?  \n04:14 - Comparativa real: SteamOS vs. Windows  \n07:33 - ¿Qué juegos funcionan (y cuáles no)?  \n08:00 - El límite lo decides tú  \n09:08 - El futuro del gaming… y tu decisión\n\n🧠 ¿Tienes curiosidad por todo lo que se puede hacer con SteamOS?\nAquí te dejo un tutorial de 7 horas (sí, ¡siete!) de Hooandee para explorar a fondo:\n\nhttps://youtu.be/OGmwtSS-zoE",
+      "category": "juegos",
+      "tags": [
+        "steamos",
+        "valve"
+      ],
+      "tip": "SteamOS ganó en silencio en el gaming."
+    },
+    {
+      "n": 37,
+      "title": "El Linux GAMER definitivo para 2025",
+      "date": "2025-06-06",
+      "id": "P5vxOVHdT0M",
+      "url": "https://www.youtube.com/watch?v=P5vxOVHdT0M",
+      "desc": "¿Y si te dijera que tu PC puede volverse más rápida, más estable y lista para jugar sin que tengas que hacer nada?\n\nNo es SteamOS.\nNo es Windows.\nEs algo mucho mejor.\n\n📺 VIDEOS RELACIONADOS:\n\n🎮 Cómo jugar TODO en Linux (Epic Games, emuladores, etc.):\n👉 https://youtu.be/CkJFJWWKmnQ\n\n🧓 Linux Mint XFCE: la mejor opción para PCs con hardware antiguo:\n👉 https://youtu.be/LE_7dBltT5E\n\n🔗 Enlaces útiles:\n\n📥 Descargar Bazzite: https://bazzite.gg\n🖱 Etcher (para grabar el USB): https://etcher.io\n✅ Compatibilidad de anticheat: https://areweanticheatyet.com\n🧩 Guía oficial para instalar Bazzite en dual boot con Windows:  https://youtu.be/pbxM_1ZJCCc\n🌐 Comunidad y guías: https://linuxparanoobs.com\n\nCapítulos:\n\n00:00 - La alternativa inesperada a Windows  \n02:12 - Mejor que SteamOS y Windows  \n03:12 - ¿Funciona en tu PC?  \n04:04 - Tecnología a prueba de balas  \n05:24 - Para cualquier PC o dispositivo  \n06:00 - Juegos compatibles y rendimiento real  \n07:55 - No solo para gamers: hace todo  \n08:35 - ¿Cómo instalar Bazzite?  \n11:01 - Cómo jugar cualquier juego  \n11:15 - El futuro del gaming está en Linux",
+      "category": "elegir-linux",
+      "tags": [
+        "gaming",
+        "bazzite",
+        "2025"
+      ],
+      "tip": "Versión anterior (2025). Para lo actual mira el Linux GAMER 2026."
+    },
+    {
+      "n": 38,
+      "title": "Arma tu PC Linux perfecta",
+      "date": "2025-06-13",
+      "id": "2M118kUNJbA",
+      "url": "https://www.youtube.com/watch?v=2M118kUNJbA",
+      "desc": "💻 ¿Quieres tener la mejor PC con Linux?\nEn este video te muestro cómo lograr el máximo rendimiento con Linux, ya sea con una PC antigua o una nueva: para jugar, editar, programar, estudiar o trabajar, sin gastar de más.\n\n✅ Qué hardware conviene (AMD, NVIDIA, Intel)\n✅ Qué distribución elegir\n✅ Cómo evitar errores y aprovechar tu equipo al máximo\n\n📥 Guías recomendadas:\n🔹 Cómo instalar Linux Mint: https://www.youtube.com/watch?v=LE_7dBltT5E\n🔹 Cómo instalar Bazzite: https://www.youtube.com/watch?v=P5vxOVHdT0M\n\n🌐 Más contenido en: https://linuxparanoobs.com\n👍 Dale like, comenta y compártelo si te fue útil.\n\n00:00 - Arma la PC que nadie espera\n01:04 - La linea perfecta de compatibilidad\n01:46 - ¿Y si no quieres gastar nada?\n03:28 - PC armada con componentes nuevos\n04:56 - ¿Qué Linux instalar según tu PC?\n06:16 - No gastes en lo que no sirve\n06:48 - Testimonio PC Vieja\n07:02 - Testimonio: la PC Linux definitiva\n10:51 - Tu próxima PC puede ser esta",
+      "category": "hardware",
+      "tags": [
+        "armar-pc",
+        "rendimiento"
+      ],
+      "tip": "Cómo armar / afinar tu PC Linux perfecta."
+    },
+    {
+      "n": 39,
+      "title": "Usa IA en Linux sin depender de nadie",
+      "date": "2025-06-20",
+      "id": "rt_rSwNDT14",
+      "url": "https://www.youtube.com/watch?v=rt_rSwNDT14",
+      "desc": "¿Soy un hipócrita? ¿Es real lo que ves en internet?\nLa inteligencia artificial está en todas partes.\nPero… ¿quién la controla?\n¿Y qué hacen con tus datos?\n\nEste video no busca tranquilizarte.\nBusca incomodarte.\nY quizá, hacerte ver las cosas desde otro ángulo.\n\n00:00 - Luces, sombras… y decisiones incómodas  \n01:33 - La verdad incómoda sobre la IA  \n03:12 - ¿Se puede usar IA sin depender de nadie?  \n05:42 - Limitaciones en IA local  \n07:11 - ¿Qué es real?  \n07:58 - ¿Soy un hipócrita?  \n09:39 - Realidad, libertad y decisiones",
+      "category": "libertad",
+      "tags": [
+        "ia",
+        "privacidad"
+      ],
+      "tip": "Usar IA en Linux sin regalar tus datos."
+    },
+    {
+      "n": 40,
+      "title": "El Linux Más Rápido (¿Vale la Pena?)",
+      "date": "2025-06-27",
+      "id": "DUYOh_Jc34o",
+      "url": "https://www.youtube.com/watch?v=DUYOh_Jc34o",
+      "desc": "¿Cuál es el sistema Linux más rápido? En este video te muestro los resultados reales y todo lo que necesitas saber antes de elegir.\n\nHablamos de velocidad, rendimiento, ligereza... y lo que nadie te cuenta sobre estos sistemas.\n\nSi vienes de otro sistema y buscas algo rápido, este video es para ti.\n\n00:00 - Intro: ¿Por qué dejé Windows?\n00:52 - ¿Qué hace rápido a un sistema Linux?\n02:32 - ¿Más ligero = más rápido?\n03:53 - Estética y fluidez también importan\n04:55 - ¿GNOME usa 2 GB? No es lo que parece\n05:31 - Las apps también consumen\n06:01 - Drivers y hardware: lo que pocos consideran\n06:48 - El Linux más rápido del mundo (pero…)\n08:53 -  Instala este Linux paso a paso\n09:43 - La mejor opción\n10:17 - El enemigo real de \"Linux lentos\"\n10:38 - Conclusión y recomendaciones finales\n\n📥 Guías recomendadas:\n🔹 Cómo instalar Linux Mint: https://www.youtube.com/watch?v=LE_7dBltT5E&pp=0gcJCR0AztywvtLA\n🔹 Arma tu PC con Linux: https://www.youtube.com/watch?v=2M118kUNJbA \n\n🌐 Más contenido en: https://linuxparanoobs.com\n👍 Dale like, comenta y compártelo si te fue útil.",
+      "category": "elegir-linux",
+      "tags": [
+        "rendimiento",
+        "ligero"
+      ],
+      "tip": "El Linux más rápido: ¿vale la pena?"
+    },
+    {
+      "n": 41,
+      "title": "El primer escritorio de Linux",
+      "date": "2025-07-04",
+      "id": "mCWFKMQHbLs",
+      "url": "https://www.youtube.com/watch?v=mCWFKMQHbLs",
+      "desc": "Muchos conocen Linux como una pantalla negra llena de comandos...\nPero hubo un momento en que todo cambió.\n\nEn este video te cuento cómo nació KDE, el primer escritorio visual para Linux, y cómo puedes probarlo hoy mismo en tu computadora.\n\n🔹 Descarga Tuxedo OS:\nhttps://os.tuxedocomputers.com/TUXEDO-OS_current.iso\n\n🎮 ¿Te interesa una opción lista para jugar? \nMira el video sobre Bazzite:\nhttps://www.youtube.com/watch?v=P5vxOVHdT0M\n\n00:00 - El día que Linux cambió  \n00:49 - ¿Cómo era Linux antes del escritorio?  \n01:44 - La idea que lo transformó todo  \n02:49 - La evolución de KDE  \n03:28 - Cómo se ve hoy en día? \n04:47 - Bazzite: KDE listo para jugar  \n05:26 - Tuxedo OS: profesional y estable  \n06:32 - ¿Cómo se instala Tuxedo OS?  \n08:02 - ¿Qué KDE es mejor para ti? \n08:17 - Un rival nace de las sombras  \n10:25 - Lo que viene en el próximo episodio",
+      "category": "escritorio",
+      "tags": [
+        "kde",
+        "historia"
+      ],
+      "tip": "Cómo nació el primer escritorio visual de Linux."
+    },
+    {
+      "n": 42,
+      "title": "GNOME vs KDE: ¿quién es el rey del escritorio Linux?",
+      "date": "2025-07-11",
+      "id": "Da6Pe30i8w8",
+      "url": "https://www.youtube.com/watch?v=Da6Pe30i8w8",
+      "desc": "¿GNOME o KDE? En este video comparamos los dos escritorios más usados en Linux: su diseño, personalización, rendimiento y filosofía. Te muestro las ventajas de cada uno para que elijas el mejor según tu estilo y tu PC. Además, te adelanto un próximo video dedicado a personalizar KDE al máximo. ¿Cuál prefieres tú?\n\n00:00 - Introducción: ¿GNOME o KDE?\n00:26 - Historia de GNOME\n01:27 - Filosofía y controversia\n02:19 - Personalización en GNOME (extensiones y límites)\n03:37 - Extensiones recomendadas\n05:04 - GNOME en la práctica: ventajas y desventajas\n05:47 - KDE: libertad y personalización total\n06:48 - Comparativa directa: GNOME vs KDE\n07:50 - ¿Cuál elegir? Recomendaciones finales\n08:33 - Anticipo: video de personalización extrema de KDE",
+      "category": "escritorio",
+      "tags": [
+        "gnome",
+        "kde"
+      ],
+      "tip": "GNOME vs KDE: cuál te conviene."
+    },
+    {
+      "n": 43,
+      "title": "KDE: Personalización extrema en Linux",
+      "date": "2025-07-18",
+      "id": "Vb9mNgiqZsw",
+      "url": "https://www.youtube.com/watch?v=Vb9mNgiqZsw",
+      "desc": "¿Cansado de las limitaciones de Windows? KDE Plasma es un entorno de escritorio para Linux que te da libertad total para personalizar tu sistema. \n\nEn este video te muestro paso a paso cómo modificar KDE desde cero, sin usar la terminal y sin instalar nada extra.\n\n Logra un diseño único, ya sea inspirado en Windows, macOS o algo totalmente original. ¡Tú decides cómo se ve y funciona tu computadora!\n\n00:00 – Introducción: ¿Por qué dejar Windows?\n\n01:51 – Primer vistazo a KDE Plasma 6\n\n02:32 – Recreando Windows 7, XP y 98 en KDE\n\n03:26 – Cómo manejar los temas globales\n\n04:17 – Personalización de la barra de tareas y efectos\n\n05:50 – Widgets, relojes y controles multimedia\n\n06:36 – Animaciones, efectos y rendimiento\n\n06:54 – KDE como GNOME (o como tú quieras)\n\n07:26 – Por qué NO usar KDE\n\n08:00 – Consejos finales + cómo restaurar todo fácilment",
+      "category": "escritorio",
+      "tags": [
+        "kde",
+        "personalizacion"
+      ],
+      "tip": "KDE: personalización extrema sin ser programador."
+    },
+    {
+      "n": 44,
+      "title": "¿Se puede usar Photoshop y Office en Linux?",
+      "date": "2025-07-25",
+      "id": "mLPI-F_zW3s",
+      "url": "https://www.youtube.com/watch?v=mLPI-F_zW3s",
+      "desc": "¿No se puede usar Photoshop, Office o juegos en Linux?\nHoy te muestro por qué eso no es del todo cierto… y cómo muchas veces no los necesitas.\n\nAdemás, si ya tienes una versión original de esos programas, te explico cómo hacerlos funcionar en Linux.\nAunque no lo recomiendo, y te digo por qué.\n\nAl final, te presento alternativas libres, seguras y potentes que puedes usar desde hoy.\n\n⚠️ Advertencia importante:\nEn la descripción encontrarás versiones compatibles y un tutorial para instalarlas con Wine, Bottles o Lutris.\nAun así… no vale la pena.\nMejor quédate y mira las opciones que te voy a recomendar.\n\nPhotoshop: https://youtu.be/yF7nvzaIITg\n\nOffice: https://youtu.be/FZKPt4PKPuw\n\n🛠️ Aplicaciones destacadas en el video:\nLibreOffice / OnlyOffice (ofimática)\n\nGIMP / Krita (edición y diseño)\n\nFreeCAD / Blender / Inkscape (Diseño profesional y 3D)\n\nDaVinci Resolve, Kdenlive (para edición de video)\n\nSteam, Lutris, Heroic Games Launcher (para juegos)\n\n⏱️ Capítulos del video:\n00:00 – El mito de “no puedo usar mis programas”\n00:55 – ¿Dependencia o necesidad?\n01:50 – Alternativas reales en Linux\n02:21 – Cómo ejecutar software de Windows en Linux\n04:39 – ¿Por qué los juegos sí, pero las apps no?\n05:26 – ¿Se pueden instalar, sí o no?\n06:16 – La mejor alternativa real",
+      "category": "windows-en-linux",
+      "tags": [
+        "office",
+        "photoshop",
+        "alternativas"
+      ],
+      "tip": "Photoshop y Office en Linux: realidad vs mito."
+    },
+    {
+      "n": 45,
+      "title": "Intereses en la Sombra",
+      "date": "2025-08-01",
+      "id": "3QTJxNglPjw",
+      "url": "https://www.youtube.com/watch?v=3QTJxNglPjw",
+      "desc": "¿Linux está muerto? Dos YouTubers, Proto y MaztherTutoriales, lo dicen con las mismas palabras. Y justo debajo, un enlace a comprar Windows.\n\n¿Coincidencia? No lo creo.\n\nDescubre la verdad detrás de esta campaña de desinformación. ¿Quién se beneficia? ¿Por qué ahora?\n\nMira el video y únete a la lucha por un futuro libre.\n\nCapítulos:\n\n00:00 ¿Linux está en Peligro?\n00:52 La Campaña de Desinformación\n01:31 ¿Intel Abandonó Linux?\n03:12 Más mentiras\n03:56 ¿Quién Está Detrás?\n05:01 El segundo youtuber\n05:35 Mismo video, mismo mensaje\n06:11 La Trampa de las Soluciones \"Lite\"\n06:55 El futuro sin Linux\n07:22 El Windows que no existe\n08:21 ¿Cómo Combatir la Desinformación?\n08:51 El Rol de los Creadores de Contenido\n09:36 El Futuro del Software Libre",
+      "category": "libertad",
+      "tags": [
+        "desinformacion",
+        "intereses"
+      ],
+      "tip": "Intereses en la sombra detrás de “Linux está muerto”."
+    },
+    {
+      "n": 46,
+      "title": "Linux que NO recomiendo",
+      "date": "2025-08-08",
+      "id": "76BzyH9uILk",
+      "url": "https://www.youtube.com/watch?v=76BzyH9uILk",
+      "desc": "¿Son estos Linux realmente para todos? Descubre por qué algunas distribuciones pueden ser una trampa para los usuarios novatos. ¿Qué pasa si tu sistema falla sin aviso? ¿Y si la distribución que usas desaparece? 🤔 ¡No te lo pierdas!\n\n\n00:00 ¿El paraíso tecnológico... o una trampa? \n01:26 Las Rolling Releases: La promesa de lo último... y el caos. \n04:02 Distros de nicho: Innovación... ¿o un camino al olvido? \n05:41 Pocos usuarios, muchos problemas.\n07:19 ¿Por qué NO recomiendo estas distros? \n07:50 Linux DIY: La libertad... con un precio muy alto.\n08:51 Mis recomendaciones seguras. \n09:28 Primeros pasos en Linux: ¡Sin miedo a equivocarte!",
+      "category": "elegir-linux",
+      "tags": [
+        "no-recomiendo",
+        "trampas"
+      ],
+      "tip": "Linux que NO recomiendo (sobre todo a novatos)."
+    },
+    {
+      "n": 47,
+      "title": "Mac vs Linux: ¿Cuál es mejor?",
+      "date": "2025-08-15",
+      "id": "YflKnmeUQF4",
+      "url": "https://www.youtube.com/watch?v=YflKnmeUQF4",
+      "desc": "¿Mac vs. Linux? ¿Cuál te da más libertad? Exploramos las ventajas y desventajas de cada sistema operativo y te ayudamos a decidir cuál se adapta mejor a tus necesidades. Descubre la verdad en este video.\n\n\n00:00 – La Pregunta del Millón\n01:00 – El Origen de Mac: De Unix a la Caja Negra\n01:54 – El Ecosistema Cerrado de Apple\n03:32 – Funciones basicas y limitaciones\n04:11 – Rendimiento y Hardware: RAM y Más\n05:02 – Personalización: Tu Sistema, Tus Reglas\n05:34 – Juegos y Compatibilidad\n06:14 – Actualizaciones y Obsolescencia Programada\n07:05 – Privacidad y Seguridad\n07:58 – Ventajas de Apple\n08:36 – Linux en Mac?\n09:13 – Reparación y durabilidad\n10:06 – Conclusión: ¿Mac o Linux? La Elección Es Tuya",
+      "category": "elegir-linux",
+      "tags": [
+        "mac",
+        "comparacion"
+      ],
+      "tip": "Mac vs Linux: libertad, precio y para quién es cada uno."
+    },
+    {
+      "n": 48,
+      "title": "Apps para controlar tu PC en Linux",
+      "date": "2025-08-22",
+      "id": "YlvEKPpNR-A",
+      "url": "https://www.youtube.com/watch?v=YlvEKPpNR-A",
+      "desc": "🔧 ¿Tu computadora está lenta o desordenada? Descubre las mejores aplicaciones en Linux para reparar discos, monitorear el rendimiento, gestionar el arranque, liberar espacio y mucho más. \n\nTodo con interfaz gráfica, sin comandos complicados. ¡Recupera el control como todo un experto! 🐧💻\n\n00:00 – ¿Problemas en Linux?\n00:42 – Controla y Repara tus Discos\n01:35 – ¿Qué tiene tu PC? Descubre tu hardware en un clic\n02:09 – Monitoreo en tiempo real del rendimiento\n02:40 – Controla las apps que se inician al encender\n03:02 – Gestiona el espacio en disco y encuentra duplicados\n03:46 – Ve el estado de tu batería y más\n04:37 – Overclocking y control de ventilador (¡para expertos!)\n04:58 – Diagnóstico forense: averigua por qué se apagó tu PC\n05:22 – Analiza tu red y descubre dispositivos conectados\n05:52 – Controla los permisos de apps Flatpak\n06:09 – Administra y limpia apps Flatpak\n06:23 – Actualiza y controla apps AppImage\n06:39 – ¿Quieres más?",
+      "category": "apps",
+      "tags": [
+        "mantenimiento",
+        "herramientas"
+      ],
+      "tip": "Apps para controlar, limpiar y monitorear tu PC Linux."
+    },
+    {
+      "n": 49,
+      "title": "¿Te falló Linux? Mira este video",
+      "date": "2025-08-29",
+      "id": "jupw7qm73ig",
+      "url": "https://www.youtube.com/watch?v=jupw7qm73ig",
+      "desc": "En este video te explico por qué fallan algunas cosas en Linux, cómo evitarlas y por qué otra distribución puede darte una experiencia completamente distinta.\n\n00:00 Introducción – ¿Fue culpa de Linux?\n01:20 Problema 1: No funciona el WiFi, Bluetooth o USB\n02:32 Problema 2: La computadora va lenta\n03:23 Problema 3: Pantalla negra o errores al iniciar\n05:00 Problema 4: No puedo actualizar o instalar programas\n05:44 Problema 5: No funciona Netflix o videos\n06:11 Problema 6: Usar Linux como si fuera Windows\n07:10 El error más grande\n07:37 Dale a Linux una segunda oportunidad",
+      "category": "estabilidad",
+      "tags": [
+        "fallos",
+        "cambiar-distro"
+      ],
+      "tip": "¿Te falló Linux? A veces el problema es la distro, no “Linux”."
+    },
+    {
+      "n": 50,
+      "title": "¿Es mejor un Linux Inmutable?",
+      "date": "2025-09-05",
+      "id": "ebt2t_RpmbU",
+      "url": "https://www.youtube.com/watch?v=ebt2t_RpmbU",
+      "desc": "¿Y si tu sistema operativo nunca se rompiera, ni siquiera al actualizar?\nYa hablamos de esto en un video pasado, pero ahora vamos más a fondo: veremos qué es realmente un Linux inmutable, por qué existe, y sobre todo, sus ventajas y desventajas reales.\n\n00:00 Introducción: ¿Te pasó esto con tu PC?\n00:36 El tiempo en Linux funciona diferente\n01:26 ¿Qué es un Linux inmutable?\n02:35 ¿Por qué existen los sistemas inmutables?\n03:44 ¿Se pueden instalar programas?\n04:38 ¿Y si quiero modificar todo?\n05:18 ¿Para quién es un Linux inmutable?\n05:56 Ventajas vs Desventajas\n06:42 Mensaje especial\n07:36 Tú decides: ¿inmutable o tradicional?",
+      "category": "estabilidad",
+      "tags": [
+        "inmutable"
+      ],
+      "tip": "¿Es mejor un Linux inmutable?"
+    },
+    {
+      "n": 51,
+      "title": "El profesor de Linux que NO usaba Linux",
+      "date": "2025-09-12",
+      "id": "LIvUu_NNKlU",
+      "url": "https://www.youtube.com/watch?v=LIvUu_NNKlU",
+      "desc": "¿Cómo puede alguien enseñar algo que no usa ni entiende de verdad?\nEsta historia va más allá de un simple error, es sobre cómo la educación puede destruir sueños, pero también cómo podemos resistir y seguir adelante.\n\n0:00 - ¿Por qué lo sencillo parece difícil?\n0:38 - El conocimiento se transmite, no es innato\n1:17 - Mi experiencia con un profesor que no sabía Linux\n2:29 - El impacto de una mala enseñanza\n3:38 - Por qué enseño Linux de forma sencilla\n4:40 - Cómo convertí la crítica en motivación\n5:25 - Qué aprenderás en este canal\n6:57 - Reflexión final: aprende con empatía y confianza",
+      "category": "primeros-pasos",
+      "tags": [
+        "educacion",
+        "mitos"
+      ],
+      "tip": "El profesor de Linux que no usaba Linux."
+    },
+    {
+      "n": 52,
+      "title": "Fedora Atómico ¿Es esto el futuro de Linux?",
+      "date": "2025-09-19",
+      "id": "wVqBtpLEZFM",
+      "url": "https://www.youtube.com/watch?v=wVqBtpLEZFM",
+      "desc": "En este video vas a descubrir todo lo que necesitas saber para dominar Fedora Atómico, un sistema inmutable que muchos creen que no se puede cambiar…\n\nAprenderás sobre Silverblue, Kinoite, Bazzite, layers, rollback, toolbox y más. Ideal si quieres estabilidad sin renunciar al control.\n\n⏱️ Capítulos\n\n0:00 — La inmutabilidad que cambia\n1:01 — ¿Qué es Fedora Atómico?\n2:14 — Sistemas inmutables: qué significa realmente\n2:46 — ¿Se puede modificar Fedora Atómico?\n3:22 — Como funciona\n4:11 — Ventajas del sistema inmutable (y sus reversiones)\n4:43 — Riesgos al instalar apps fuera de la Appstore\n5:23 — Comandos clave para Fedora Atómico\n6:24 — ¿Por qué siempre hay que reiniciar?\n6:56 — Toolbox: el entorno libre dentro del sistema\n7:48 — Limitaciones importantes (códecs y NVIDIA)\n8:12 — Bazzite: la alternativa lista para usar\n8:43 — ¿Cuál es mejor para ti? Comparativa y recomendaciones\n9:30 — ¿Te animarias a probarlos?\n\n🔗 Enlaces útiles\n\nCómo instalar Fedora Silverblue: https://youtu.be/GpWcSMWGzDo\n\nGuía de instalación de Bazzite: https://youtu.be/P5vxOVHdT0M",
+      "category": "estabilidad",
+      "tags": [
+        "fedora",
+        "atomico",
+        "inmutable"
+      ],
+      "tip": "Fedora Atómico: ¿el futuro de Linux?"
+    },
+    {
+      "n": 53,
+      "title": "¿Qué pasa si NO actualizas Linux?",
+      "date": "2025-09-26",
+      "id": "j75zI25WWDw",
+      "url": "https://www.youtube.com/watch?v=j75zI25WWDw",
+      "desc": "Hoy en día muchas personas recomiendan Linux como si todas las distribuciones fueran iguales. Pero ¿qué pasa si no actualizas tu sistema? En este video te cuento casos reales para que entiendas cómo se mantiene cada tipo de distribución y qué debes tener en cuenta antes de elegir.\n\n⏱ Capítulos:\n\n0:00 El mito de que Linux “se mantiene solo”\n0:42 Qué significa actualizar en Linux\n1:16 Caso 1: una computadora olvidada\n2:14 Caso 2: el equipo de un familiar\n4:25 Distribuciones estables sin soporte a largo plazo\n5:45 La solución moderna\n6:19 ¿Qué distribución elegir según tu caso?\n6:59 Los 4 modelos\n7:51 Conclusión y consejos",
+      "category": "estabilidad",
+      "tags": [
+        "actualizaciones"
+      ],
+      "tip": "Qué pasa si NO actualizas Linux."
+    },
+    {
+      "n": 54,
+      "title": "¿Te mentí sobre actualizar Linux?",
+      "date": "2025-10-03",
+      "id": "pdu0sN7IOJk",
+      "url": "https://www.youtube.com/watch?v=pdu0sN7IOJk",
+      "desc": "En este video aclaramos las dudas y confusiones que surgieron después del último video sobre Linux. Una explicación directa y sencilla para entender mejor cómo funcionan las actualizaciones y qué significan realmente para tu sistema.\n\n0:00 Por qué hago este video\n0:57 Qué se malinterpretó del video anterior\n1:36 ¿Windows realmente se actualiza menos que Linux?\n2:17 El riesgo real de no actualizar (ejemplo Shodan)\n3:20 ¿Linux se rompe solo si no actualizas?\n3:50 Rolling release: por qué fallan tras meses sin uso\n4:31 LTS: qué pasa cuando termina el soporte\n5:05 “Yo nunca actualizo y no pasa nada”: mito explicado\n5:35 Este canal no es únicamente para expertos\n6:23 Opciones fáciles para quienes no quieren complicarse\n7:03 Demostración práctica: Actualizando Linux sin soporte.\n7:51 Actualizar en Linux, pero a tu manera",
+      "category": "estabilidad",
+      "tags": [
+        "actualizaciones",
+        "aclaracion"
+      ],
+      "tip": "Aclaración: actualizar Linux no es lo mismo en todas las distros."
+    },
+    {
+      "n": 55,
+      "title": "Descanse en paz, Windows 10",
+      "date": "2025-10-10",
+      "id": "uvkmnYfrf5A",
+      "url": "https://www.youtube.com/watch?v=uvkmnYfrf5A",
+      "desc": "En pocos días, Windows 10 dejará de recibir soporte oficial. ¿Es una buena idea seguir usándolo? ¿Vale la pena pasar a Windows 11? ¿Y si te dijera que existe una alternativa más ligera, más segura y totalmente libre? \n\nEn este video, desmonto los mitos, expongo la verdad detrás de Microsoft y te muestro la única salida.\n\n00:00 - El fin de Windows 10\n00:34 - Mi experiencia personal con Windows y Linux\n01:39 - La gran mentira del “Windows bueno”\n03:04 - El colapso de Windows: hardware y privacidad\n04:06 - Las trampas: LTSC, Tiny11 y no actualizar\n06:10 - ¿Por qué Linux es la única salida?\n07:15 - Presentación de la Guía Maestra Linux 2025\n07:40 - Retoma el control de tu tecnología\n\nGuía maestra gratuita de Linux: https://www.linuxparanoobs.com/2025/10/guia-completa-para-empezar-con-linux.html",
+      "category": "primeros-pasos",
+      "tags": [
+        "windows10",
+        "fin-soporte"
+      ],
+      "tip": "Fin de Windows 10: qué opciones tienes."
+    },
+    {
+      "n": 56,
+      "title": "El Linux fácil para todos (Zorin)",
+      "date": "2025-10-17",
+      "id": "bceQvBktRXI",
+      "url": "https://www.youtube.com/watch?v=bceQvBktRXI",
+      "desc": "¿Estás cansado de que tu PC te limite? Zorin OS es la solución: rápido, seguro y sin complicaciones. En este video, te guiaré paso a paso para que puedas instalar esta versión de Linux, ideal tanto para usuarios novatos como para quienes ya usan Windows.\n\n00:00 ¿Estás cansado de Windows? Te presento Zorin OS.\n\n00:58 ¿Qué hay de nuevo en Zorin OS 18?\n\n01:51 Personalización del escritorio.\n\n02:20 Aplicaciones preinstaladas.\n\n02:44 Control sobre tu sistema.\n\n03:19 Instalar aplicaciones fácilmente y sin riesgos.\n\n04:03 Ejecutar programas de Windows en Linux.\n\n05:14 Juegos de Windows en Zorin OS.\n\n05:51 Alternativas si necesitas Windows.\n\n06:10 ¿Cómo instalar Zorin OS?\n\n07:50 ¿Listo para descubrir Linux?\n\nDescarga Zorin OS Core gratis aquí: https://zorin.com/os/download/",
+      "category": "instalar",
+      "tags": [
+        "zorin",
+        "guia"
+      ],
+      "tip": "Zorin 18: escritorio familiar, .exe → tienda/Bottles, Steam listo y LibreOffice de fábrica."
+    },
+    {
+      "n": 57,
+      "title": "Windows virtual en Linux",
+      "date": "2025-10-24",
+      "id": "Uq74kKd1CAg",
+      "url": "https://www.youtube.com/watch?v=Uq74kKd1CAg",
+      "desc": "¿Quieres usar Linux, pero hay una aplicación de Windows que no puedes dejar atrás?\n\nEn este video te muestro la solución definitiva: cómo tener Windows dentro de tu Linux fácilmente con Gnome Boxes.\nSin comandos, sin complicaciones y sin riesgos.\n\n0:00 – La solución definitiva\n1:48 – Qué es una máquina virtual\n2:21 – Gnome Boxes\n2:44 – Instalar Gnome Boxes\n2:59 – Descargar Windows 10\n3:30 – Crear la máquina virtual\n4:31 – Instalación de Windows\n05:14 – Optimización del sistema\n06:24 – Compartir carpetas, pantalla completa y restauración\n06:55 – Limitaciones y consejos\n07:36 – Instalar otros sistemas operativos\n08:22 – Winboat: la próxima evolución\n09:15 – No más excusas\n\nDescarga el programa de optimización aquí: https://www.linuxparanoobs.com/2025/10/windows-en-linux-con-gnome-boxes.html",
+      "category": "windows-en-linux",
+      "tags": [
+        "vm",
+        "gnome-boxes"
+      ],
+      "tip": "Windows virtual dentro de Linux (sin abandonar Linux)."
+    },
+    {
+      "n": 58,
+      "title": "El Halloween que asustó a Microsoft",
+      "date": "2025-10-31",
+      "id": "zOhgKPmlftQ",
+      "url": "https://www.youtube.com/watch?v=zOhgKPmlftQ",
+      "desc": "En este especial de Halloween, te cuento una historia real que Microsoft quiso ocultar: los Halloween Documents.\n\n🕐 Capítulos:\n\n0:00 Una historia de miedo real\n0:46 El nacimiento de Linux\n02:06 Los Documentos de Halloween\n03:36 La reacción del software libre\n04:16 El plan oscuro de Microsoft y SCO\n05:17 El ascenso de Linux\n06:12 “Microsoft ama a Linux”\n07:18 El futuro: ¿rendición o adaptación?\n08:39 La libertad vence al miedo",
+      "category": "libertad",
+      "tags": [
+        "historia",
+        "microsoft"
+      ],
+      "tip": "Halloween Documents: lo que Microsoft quiso ocultar."
+    },
+    {
+      "n": 59,
+      "title": "Tarjetas gráficas y drivers en Linux",
+      "date": "2025-11-07",
+      "id": "QOqiAsOIxsE",
+      "url": "https://www.youtube.com/watch?v=QOqiAsOIxsE",
+      "desc": "Te explico cómo funcionan las tarjetas gráficas Intel, AMD y NVIDIA en Linux, qué drivers usar y cómo evitar errores para siempre.\n\n00:00 Pablo y su salto a Linux\n00:48 Por qué fallan las gráficas en Linux\n01:16 Intel: los drivers que siempre funcionan\n01:47 AMD: rendimiento y soporte a largo plazo\n02:37 NVIDIA: el eterno problema\n03:16 Tipos de drivers NVIDIA y cuál elegir\n03:45 Linux para Nvidia viejas\n04:15 Drivers abiertos vs privativos\n04:34 La distro ideal según tu GPU\n04:57 Wayland y X11: qué usar hoy\n05:15 Cambio de tarjeta gráfica sin errores\n05:39 Resumen final y recomendaciones\n06:32 “No temas al pingüino, domínalo” 🐧",
+      "category": "hardware",
+      "tags": [
+        "gpu",
+        "nvidia",
+        "amd",
+        "intel"
+      ],
+      "tip": "Intel y AMD suelen ir solos; NVIDIA usa drivers propios. ~muchos fallos en Linux vienen de la GPU."
+    },
+    {
+      "n": 60,
+      "title": "¿Debes dejar de usar Ubuntu?",
+      "date": "2025-11-14",
+      "id": "N9tX0-CuI8s",
+      "url": "https://www.youtube.com/watch?v=N9tX0-CuI8s",
+      "desc": "En este video respondo al debate sobre Ubuntu y Fedora: ¿Por qué la comunidad critica más a Ubuntu si ambas distros hacen cosas parecidas?\n\n⏱️ Capítulos\n\n00:00 – El origen del debate con Ezku\n01:08 – Aviso importante\n01:45 – Telemetría: Ubuntu vs Fedora\n03:37 – ¿Fedora está controlada por una empresa?\n04:52 – Snap vs Flatpak: dos filosofías\n07:14 – La visión corporativa de Canonical\n09:12 – Qué está haciendo Fedora\n09:43 – ¿Ubuntu es malo y Fedora es bueno?\n10:53 – La importancia de la libertad de elección\n11:56 – Dame tu opinión",
+      "category": "elegir-linux",
+      "tags": [
+        "ubuntu",
+        "fedora",
+        "debate"
+      ],
+      "tip": "¿Debes dejar de usar Ubuntu? El debate con Fedora."
+    },
+    {
+      "n": 61,
+      "title": "El Problema Real de los Anticheats",
+      "date": "2025-11-21",
+      "id": "b6oI9FdFh7k",
+      "url": "https://www.youtube.com/watch?v=b6oI9FdFh7k",
+      "desc": "Los anticheats de nivel kernel están generando un fuerte debate en la comunidad Linux. ¿Son un riesgo real para tu PC? ¿Pueden dañar tu hardware? ¿Por qué algunos juegos simplemente no funcionan en Linux?\n\n⏱️ Capítulos\n\n00:00 – El problema de los juegos\n00:48 – Qué son los anticheats\n01:45 – Anticheats a nivel kernel\n02:01 – ¿Peor que un virus?\n02:21 – ¿Pueden dañar tu PC?\n03:37 – Caso CrowdStrike\n04:37 – ¿Quién tiene el control?\n05:26 – Por qué algunos juegos no funcionan en Linux\n06:29 – El dilema en SteamOS\n08:02 – Soluciones actuales\n08:20 – Anticheats: ¿sí o no?",
+      "category": "juegos",
+      "tags": [
+        "anticheat",
+        "kernel"
+      ],
+      "tip": "El problema real de los anticheats en Linux."
+    },
+    {
+      "n": 62,
+      "title": "La enfermedad de Linux",
+      "date": "2025-11-28",
+      "id": "U1Y8xpweMOk",
+      "url": "https://www.youtube.com/watch?v=U1Y8xpweMOk",
+      "desc": "Descubre qué es el distrohopping, la “enfermedad” más conocida entre los usuarios de Linux. Te cuento cómo empieza, por qué nos atrapa y cómo puedes vacunarte para no caer en ella.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nCapítulos del video:\n\n00:00 – La enfermedad de Linux\n00:55 – Patrocinador: Hostinger y Black Friday\n02:25 – ¿Qué es el distrohopping?\n03:19 – Cómo empieza la enfermedad\n03:54 – Mi primer síntoma: Ubuntu y Fedora\n04:33 – Primer motivo: La apariencia\n05:01 – Segundo motivo: Sistema de actualizaciones\n06:02 – Tercer motivo: La búsqueda del Linux perfecto\n06:56 – El ciclo del distrohopping\n07:56 – ¿La solución es volver a Windows?\n08:23 – Mi propia cura y reflexión final\n09:00 – ¿Te contagiaste?",
+      "category": "primeros-pasos",
+      "tags": [
+        "distrohopping"
+      ],
+      "tip": "La “enfermedad” del distrohopping y cómo no caer."
+    },
+    {
+      "n": 63,
+      "title": "La verdad de la pantalla negra en Linux",
+      "date": "2025-12-05",
+      "id": "jqXb8qpr29A",
+      "url": "https://www.youtube.com/watch?v=jqXb8qpr29A",
+      "desc": "Tu PC se apaga, vuelves más tarde… y no enciende. Pantalla negra, errores raros, pánico total. Pero no te preocupes, en este video aprenderás por qué ocurre y cómo evitarlo.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\nCapítulos del video:\n\n00:00 – El momento más aterrador\n00:57 – Patrocinador: Hostinger y Cyber Week\n02:26 – Nivel 1: La PC no da imagen\n03:41 – Nivel 2: Pantalla negra después del logo\n04:44 – Nivel 3: Drivers y el problema típico con Nvidia\n07:08 – Nivel 4: Kernel Panic: qué significa\n08:07 – Nivel 5: Pantalla negra con letras\n08:57 – Nuevo Reddit de la comunidad\n09:49 – Te espero",
+      "category": "hardware",
+      "tags": [
+        "pantalla-negra",
+        "arranque"
+      ],
+      "tip": "La verdad de la pantalla negra (y cómo evitar el pánico)."
+    },
+    {
+      "n": 64,
+      "title": "Valve quiere destruir Android",
+      "date": "2025-12-12",
+      "id": "g0s5LkUK-mQ",
+      "url": "https://www.youtube.com/watch?v=g0s5LkUK-mQ",
+      "desc": "Este video revela el futuro de SteamOS, la llegada de PCs ARM con Linux y cómo esto puede cambiar la computación personal para siempre.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\nCapítulos del video:\n\n00:00 – Se viene lo mejor de Valve\n00:48 – Patrocinador: Hostinger y Cyber Week\n02:19 – Linux y ARM\n04:04 – El fracaso de las Steam Machines y el nacimiento de Proton\n05:30 – FEX: ejecutar apps x86 en ARM\n06:35 – El verdadero rival\n07:56 – Lepton: apps de Android en Linux\n09:29 – El futuro del ecosistema Linux y SteamOS",
+      "category": "libertad",
+      "tags": [
+        "valve",
+        "arm",
+        "futuro"
+      ],
+      "tip": "Valve, ARM y el futuro más allá de Android/Windows."
+    },
+    {
+      "n": 65,
+      "title": "Nada será igual",
+      "date": "2025-12-19",
+      "id": "9J7zBtInHmE",
+      "url": "https://www.youtube.com/watch?v=9J7zBtInHmE",
+      "desc": "La inteligencia artificial está cambiando la informática, pero no de la mejor manera. En este video analizo por qué la imposición de la IA puede ser peligrosa, cómo afecta a Windows, al hardware y a nuestra privacidad, y por qué Linux podría ser la mejor respuesta para recuperar el control de nuestras PCs.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos:\n\n00:00 Algo muy malo está por cambiar la informática\n01:23 Herramienta o imposición?\n02:35 Privacidad, libertad y el problema real de la IA\n03:32 La burbuja de la IA y el riesgo económico\n04:01 Hardware caro, requisitos absurdos y dependencia total\n05:26 IA local y por qué no es lo que quieren las empresas\n06:29 Elegir usar IA o no usarla\n07:25 Linux crece y el mensaje a Microsoft y Apple\n08:35 2026: por qué puede ser el gran año de Linux",
+      "category": "libertad",
+      "tags": [
+        "ia",
+        "windows"
+      ],
+      "tip": "Cuando la IA se impone… y por qué Linux importa."
+    },
+    {
+      "n": 66,
+      "title": "Linux pesado… ¿por qué existe?",
+      "date": "2026-01-09",
+      "id": "AaHqCWM4PVo",
+      "url": "https://www.youtube.com/watch?v=AaHqCWM4PVo",
+      "desc": "¿Existe un Linux tan pesado que parece Windows? 😲 En este video descubrimos cuál es el Linux más pesado del mundo, por qué consume tantos recursos y, aunque parezca contradictorio, por qué sigue teniendo sentido usarlo.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos:\n00:00 – Linux pesado vs Windows\n00:51 – Mensaje del sponsor: Hostinger\n01:58 – ¿Qué hace pesado a un Linux?\n02:44 – Característica 1: Interfaces gráficas y GNOME\n03:17 – Característica 2: Optimización y pureza del código\n04:29 – Característica 3: Snap y su impacto\n05:33 – El mito del software preinstalado\n06:18 – Linux pesados?\n07:12 – El Linux más pesado\n08:01 – Comparación con Windows y otros Linux\n08:50 – ¿Pesado pero vale la pena?",
+      "category": "elegir-linux",
+      "tags": [
+        "pesado",
+        "recursos"
+      ],
+      "tip": "Linux pesado: por qué existe (y para quién sirve)."
+    },
+    {
+      "n": 67,
+      "title": "Protege tus archivos en Linux",
+      "date": "2026-01-16",
+      "id": "tuSdXwlf_S8",
+      "url": "https://www.youtube.com/watch?v=tuSdXwlf_S8",
+      "desc": "Un pequeño susto puede convertirse en una gran pesadilla si no tienes copias de seguridad. En este video te muestro cinco aplicaciones fáciles y confiables para hacer backups en Linux, sin comandos complicados y sin ser experto.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 – El terror de perderlo todo\n01:36 – Mensaje del sponsor: Hostinger\n02:38 – Deja Dup: el backup más simple\n04:07 – Pika Backup: sencillo y rápido\n04:44 – FreeFileSync: control total de tus copias\n06:02 – La regla 3-2-1 explicada\n06:48 – Gnome Disks: copia completa del disco\n07:48 – TimeShift: protege tu sistema Linux\n08:44 – Más apps en próximos videos?",
+      "category": "estabilidad",
+      "tags": [
+        "backup",
+        "archivos"
+      ],
+      "tip": "Protegé tus archivos: backups fáciles en Linux."
+    },
+    {
+      "n": 68,
+      "title": "¿Linux en laptops es un problema?",
+      "date": "2026-01-23",
+      "id": "1YJtd9Zxl38",
+      "url": "https://www.youtube.com/watch?v=1YJtd9Zxl38",
+      "desc": "¿Linux funciona bien en laptops? En este video te digo la verdad: qué pasa al instalar Linux en laptops antiguas, y el secreto mejor guardado para tener un Laptop potente sin gastar mucho dinero.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 La pregunta incómoda sobre Linux en laptops\n00:52 Mensaje del sponsor: Hostinger\n01:55 Los 3 escenarios\n02:21 Laptops muy antiguas y Linux\n04:25 Laptops 2010 en adelante\n05:00 Laptops modernas y gamer con Linux\n05:57 Opciones premium\n07:20 El secreto mejor guardado\n09:18 Mi experiencia real\n10:32 Qué laptop eliges?",
+      "category": "hardware",
+      "tags": [
+        "laptops"
+      ],
+      "tip": "¿Linux en laptops es un problema? La verdad práctica."
+    },
+    {
+      "n": 69,
+      "title": "Windows 11 es el final",
+      "date": "2026-01-31",
+      "id": "IGiijX3mtUo",
+      "url": "https://www.youtube.com/watch?v=IGiijX3mtUo",
+      "desc": "Todo lo que parecía indispensable en tu PC está desapareciendo: Windows, Office, Photoshop y los juegos. El cambio ya comenzó… y Linux está listo para tomar el control.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\nLinux fáciles de usar:\n\nhttps://www.youtube.com/watch?v=gbX11i7s5cY&list=PLVuA15jNJ60mcK_LwllgCTOKhb-SSxvUJ&pp=sAgC\n\n⏱️ Capítulos:\n\n00:00 – El nuevo Windows\n01:30 – Mensaje del sponsor: Hostinger\n02:42 – Office y Windows se van\n06:38 – El futuro de los juegos\n08:57 – Photoshop desaparece\n10:04 – Linux al rescate\n12:02 – Listo para el cambio?",
+      "category": "primeros-pasos",
+      "tags": [
+        "windows11",
+        "cambio"
+      ],
+      "tip": "Windows 11 como síntoma: el cambio ya empezó."
+    },
+    {
+      "n": 70,
+      "title": "¿ID para usar Linux?",
+      "date": "2026-03-13",
+      "id": "eztPoepCxuA",
+      "url": "https://www.youtube.com/watch?v=eztPoepCxuA",
+      "desc": "Algo está cambiando en el mundo de los sistemas operativos. Nuevas regulaciones podrían obligar a verificar la edad o identidad incluso para instalar Windows, macOS o Linux. En este video te explico qué está pasando, por qué preocupa a la comunidad tecnológica y qué podría significar para el futuro de la privacidad y la libertad digital.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 Algo acaba de pasar\n00:57 El inicio de todo\n01:37 La nueva ley que lo cambia todo\n03:06 La reacción del mundo Linux\n04:12 Lo que podría venir después\n05:50 El impacto en distribuciones Linux\n06:24 La única resistencia real\n07:51 Una reflexión importante\n09:12 Tu opinión importa",
+      "category": "libertad",
+      "tags": [
+        "identidad",
+        "regulacion"
+      ],
+      "tip": "¿ID para usar tu sistema? Lo que se viene."
+    },
+    {
+      "n": 71,
+      "title": "Quise recomendar este Linux… pero no puedo",
+      "date": "2026-03-20",
+      "id": "bGFeL5EfqNc",
+      "url": "https://www.youtube.com/watch?v=bGFeL5EfqNc",
+      "desc": "Desde que empecé este canal, hubo una distro Linux que siempre estuvo rondando mi top… pero nunca logré recomendarla.\n\nEn este video te cuento toda la verdad sobre Pop!_OS, su potencial, sus errores, y por qué en 2026 vuelve a estar en el centro de la polémica.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 El Linux que casi recomendé\n01:00 Qué es Pop!_OS y su potencial\n01:24 Primeros problemas y errores clave\n02:27 El Linux Challenge de Linus Tech Tips\n03:27 El nacimiento de COSMIC\n04:38 Problemas de estabilidad y rendimiento\n05:19 El regreso en 2026 y nueva polémica\n06:41 Lo recomiendo en 2026?\n07:47 ¿Esperar o probar ya?",
+      "category": "elegir-linux",
+      "tags": [
+        "popos",
+        "recomendacion"
+      ],
+      "tip": "Pop!_OS: por qué quiso recomendarlo… y por qué no pudo."
+    },
+    {
+      "n": 72,
+      "title": "Nunca cometas este error al usar Linux",
+      "date": "2026-03-27",
+      "id": "Uo6F2juGO5s",
+      "url": "https://www.youtube.com/watch?v=Uo6F2juGO5s",
+      "desc": "¿Por qué tanta gente abandona Linux y vuelve a Windows derrotada? En este video te cuento la historia real de un seguidor que estuvo a punto de rendirse por un error muy común.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 Por qué los nuevos usuarios se rinden?\n01:21 \"Me rindo\": El caso real de Reddit\n02:34 La metáfora del coche nuevo vs. el coche viejo\n05:18 La trampa de la terminal y los foros de internet\n04:07 La solución que nadie te dice\n05:22 ¿Quién falló realmente? El método vs. el sistema\n06:04 Consejos para nuevos y veteranos\n07:10 Cambiando la forma de usar Linux",
+      "category": "instalar",
+      "tags": [
+        "errores",
+        "abandonar"
+      ],
+      "tip": "El error que hace que la gente vuelva derrotada a Windows."
+    },
+    {
+      "n": 73,
+      "title": "¡La NUEVA ERA del Gaming en LINUX!",
+      "date": "2026-04-03",
+      "id": "HPl8ALTJtDM",
+      "url": "https://www.youtube.com/watch?v=HPl8ALTJtDM",
+      "desc": "En el video de hoy hablamos de una actualización masiva que está por llegar al núcleo de Linux y que promete sacudir los cimientos del gaming actual. No es clickbait, estamos hablando de saltos de rendimiento que hasta ahora parecían imposibles y de una tecnología que ataca directamente el mayor punto débil de jugar en sistemas libres.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 El gran cambio en el horizonte\n01:14 El problema detrás de la compatibilidad (WINE)\n02:27 La pieza que le faltaba al Kernel\n03:03 Pruebas de rendimiento brutales\n03:39 La fuerza de la comunidad frente a lo cerrado\n04:38 El salto de Steam y la evolución de Bottles\n05:36 La unión hace la fuerza: El futuro del ecosistema\n06:25 Lo que se viene\n07:38 Tú eres el dueño",
+      "category": "juegos",
+      "tags": [
+        "kernel",
+        "futuro"
+      ],
+      "tip": "Nueva era del gaming en Linux (cambios de fondo)."
+    },
+    {
+      "n": 74,
+      "title": "El Nuevo Sistema Gráfico de Linux",
+      "date": "2026-04-10",
+      "id": "Q3Tco2Wm5HU",
+      "url": "https://www.youtube.com/watch?v=Q3Tco2Wm5HU",
+      "desc": "¿Estás listo para la transformación más grande de Linux? En este video te explico todo sobre Wayland, la tecnología gráfica que está destinada a reemplazar al antiguo Xorg. Te mostraré qué implicaciones tiene este cambio en tu uso diario, cuáles han sido los obstáculos técnicos y te doy mi opinión sincera sobre si ya estás preparado para esta nueva era.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 El Cambio Inevitable (Xorg vs Wayland)\n00:30 La Evolución Tecnológica y las Limitaciones de Xorg\n01:49 Adopción, Detractores y el Papel de Nvidia\n03:15 Estado Actual, Madurez y Excepciones\n04:25 Compatibilidad Hardware: Requisitos para AMD, Intel y Nvidia\n05:53 Estrategias Anti-Obsolescencia para PC viejas\n07:00 ¿Qué opino al respecto?\n07:54 El Futuro de Linux y tu PC",
+      "category": "hardware",
+      "tags": [
+        "wayland",
+        "graficos"
+      ],
+      "tip": "Wayland reemplaza a Xorg (HDR, escalado). AMD/Intel ok; GPU muy vieja puede necesitar sesión X11."
+    },
+    {
+      "n": 75,
+      "title": "¡Tu Linux está LLENO de BASURA! (Y no lo sabes)",
+      "date": "2026-04-17",
+      "id": "q2e6oIwJOjM",
+      "url": "https://www.youtube.com/watch?v=q2e6oIwJOjM",
+      "desc": "Descubre el secreto de los archivos ocultos, cómo evitar que el espacio en disco desaparezca misteriosamente en unidades externas y el funcionamiento de las rutas clave de configuración.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n00:00 - El mito de la lentitud en Linux\n01:03 - El secreto de los archivos ocultos\n02:25 - El truco de la papelera en discos externos\n03:37 - Rutas mágicas: .config, .var y el caso de Snap\n04:57 - Gestión de archivos temporales y caché\n05:10 - Limpieza de iconos huérfanos en el menú\n05:53 - Warehouse: La herramienta definitiva de limpieza\n06:38 - Advertencia sobre Snap vs Warehouse\n07:14 - Consejos finales de mantenimiento\n08:36 - A limpiar se ha dicho",
+      "category": "apps",
+      "tags": [
+        "limpieza",
+        "archivos-ocultos"
+      ],
+      "tip": "Tu Linux lleno de “basura”: archivos ocultos y espacio perdido."
+    },
+    {
+      "n": 76,
+      "title": "El único Linux que NO podrá ser controlado",
+      "date": "2026-04-24",
+      "id": "bgBze5yOQdw",
+      "url": "https://www.youtube.com/watch?v=bgBze5yOQdw",
+      "desc": "Lo que parecía una distopía es hoy una batalla legal urgente. En este video revelamos al verdadero titán tecnológico que presiona en las sombras para convertir tu hardware en un espia digital. Analizamos la preocupante evolución de las leyes de \"seguridad\" desde California hasta el resto del mundo y cómo componentes críticos de Linux están en la mira.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n00:00 La distopía de la identificación obligatoria\n01:01 ¿Quién está detrás?\n02:14 De ley local a amenaza global\n03:48 Esperanza en la comunidad\n04:58 Sistemas de Libertad Extrema\n06:34 La mejor opción para novatos\n07:03 El costo de nuestra comodidad\n08:03 El futuro del Open Source",
+      "category": "libertad",
+      "tags": [
+        "hardware",
+        "control"
+      ],
+      "tip": "El Linux (y el hardware) que no quiere ser controlado."
+    },
+    {
+      "n": 77,
+      "title": "¿El fin de una era? Todo sobre GNOME 50",
+      "date": "2026-05-08",
+      "id": "FXreGOtyXmw",
+      "url": "https://www.youtube.com/watch?v=FXreGOtyXmw",
+      "desc": "¡Llega GNOME 50! Analizamos una de las actualizaciones más importantes y ambiciosas del escritorio Linux. Con el salto definitivo hacia tecnologías modernas, esta versión promete mayor fluidez y rendimiento, aunque también marca el fin de una era para componentes antiguos...\n\nVideo sobre Wayland:\nhttps://youtu.be/Q3Tco2Wm5HU\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n00:00 El cambio que va a dividir opiniones\n00:37 Por qué Wayland es el futuro (y el problema)\n01:30 GNOME 50 y el adiós definitivo a X11\n02:37 Rendimiento, fluidez y escalado 4K\n03:51 Mejoras en archivos y navegación rápida\n04:35 La verdad sobre el Control Parental y la privacidad\n05:36 Escritorio remoto y lo que falta por llegar \n06:13 ¿Vale la pena actualizar? La libertad de elegir\n07:45 El mejor sistema es el que se adapta a ti",
+      "category": "escritorio",
+      "tags": [
+        "gnome",
+        "actualizacion"
+      ],
+      "tip": "GNOME 50: qué cambia en el escritorio moderno."
+    },
+    {
+      "n": 78,
+      "title": "No instales Linux???",
+      "date": "2026-05-15",
+      "id": "7TFOjmxq1_4",
+      "url": "https://www.youtube.com/watch?v=7TFOjmxq1_4",
+      "desc": "¡ADVERTENCIA! No veas este video... a menos que quieras entender por qué tantos canales te dicen que no uses Linux. 🐧🚫 En este video, \"arruinamos\" la sorpresa y te contamos la \"terrible\" verdad sobre lo que está pasando en el ecosistema de Linux en YouTube.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n00:00 El problema que nadie quiere admitir\n00:44 Lo que el algoritmo te muestra de Linux\n02:23 El efecto secundario del \"odio\" fingido\n03:14 El daño a los nuevos usuarios\n04:01 El absurdo: ¿Linux te vuelve vago?\n05:27 La verdad sobre los \"Virus en Linux\"\n06:14 Cómo detectar el clickbait vacío\n07:30 Un mensaje para los creadores (y para ti)\n09:18 Abre la puerta a Linux",
+      "category": "primeros-pasos",
+      "tags": [
+        "miedos",
+        "desinformacion"
+      ],
+      "tip": "“No instales Linux”: por qué te lo dicen (y qué hay detrás)."
+    },
+    {
+      "n": 79,
+      "title": "¿Deberías instalar CachyOS?",
+      "date": "2026-05-22",
+      "id": "goCzc4TdQvY",
+      "url": "https://www.youtube.com/watch?v=goCzc4TdQvY",
+      "desc": "¿Vale la pena CachyOS, el nuevo rey de Linux para gamers? Analizamos si esta distribución optimizada es la mejor opción para ti. Descubre por qué CachyOS es una obra maestra de ingeniería y por qué deberías empezar con cautela.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n00:00 El nuevo rey de Linux\n00:42 ¿Qué busca CachyOS?\n01:52 Instalación y Primeros Problemas Técnicos\n03:49 Experiencia de Usuario: Lo que se siente usar CachyOS\n05:19 Es realmente fácil?\n06:22 Lo que Dicen vs La Realidad\n07:39 ¿Para quién es CachyOS?\n08:43 Estas de acuerdo?",
+      "category": "elegir-linux",
+      "tags": [
+        "cachyos",
+        "gaming",
+        "avanzado"
+      ],
+      "tip": "CachyOS: ¿deberías instalarlo? (ojo si sos noob)."
+    },
+    {
+      "n": 80,
+      "title": "Top Linux 2026: Windows ya no es necesario",
+      "date": "2026-05-30",
+      "id": "l4XmAcxgeXg",
+      "url": "https://www.youtube.com/watch?v=l4XmAcxgeXg",
+      "desc": "Después de dos años, vuelvo a actualizar mi ranking de Linux todoterreno para principiantes y usuarios intermedios. Analizaremos cuáles son los Linux que mejor combinan facilidad de uso, estabilidad, compatibilidad, comunidad y rendimiento en 2026.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n00:00 Todo ha cambiado\n00:42 Criterios del ranking\n01:59 Puesto #3\n04:22 Puesto #2\n06:53 Puesto #1\n09:01 ¿Estás de acuerdo?",
+      "category": "elegir-linux",
+      "tags": [
+        "ranking",
+        "2026",
+        "principiantes"
+      ],
+      "tip": "Top Linux 2026: Windows ya no es necesario."
+    },
+    {
+      "n": 81,
+      "title": "Linux GAMER 2026: La actualización definitiva",
+      "date": "2026-06-26",
+      "id": "uRUSiYrPljk",
+      "url": "https://www.youtube.com/watch?v=uRUSiYrPljk",
+      "desc": "¿Pensando en comprar la nueva Steam Machine o cansado de los anuncios e IA invasiva de Windows 11? En este video te muestro cómo transformar por completo esa PC vieja, laptop o mini PC que ya tienes en casa en la consola de juegos definitiva para tu sala, todo esto de forma 100% gratuita, segura y sin complicaciones\n\nSitio oficial de Bazzite:\nhttps://bazzite.gg/\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n00:00 El problema de la Steam Machine y Windows 11\n02:33 Qué versión descargar (Desktop vs Home Theater)\n03:20 ¡Cuidado con tus datos!\n03:58 Configuración de la BIOS y Secure Boot\n04:47 Instalación paso a paso con el nuevo asistente web\n05:15 El primer arranque y la clave MOK\n05:44 Modo Consola vs Escritorio KDE Plasma 6\n06:14 Descargando apps y juegos con Bazaar\n06:40 Juegos externos, emulación y mandos\n08:05 Te animas?",
+      "category": "juegos",
+      "tags": [
+        "steamos",
+        "gaming",
+        "actualizacion",
+        "2026",
+        "bazzite",
+        "gamer"
+      ],
+      "tip": "Bazzite actualizado: instalación, Desktop vs consola y NVIDIA."
+    },
+    {
+      "n": 82,
+      "title": "El plan para que pagues de por vida",
+      "date": "2026-07-13",
+      "id": "SRZQLKw-KHE",
+      "url": "https://www.youtube.com/watch?v=SRZQLKw-KHE",
+      "desc": "¿Te has puesto a pensar si realmente te pertenece lo que compras en internet? En este video analizamos cómo la industria tecnológica, los videojuegos y hasta los electrodomésticos están cambiando las reglas del juego a través de suscripciones y bloqueos digitales.\n\n🚀 Crea tu web profesional hoy mismo! Usa el cupón LPN y consigue tu descuento: https://hostinger.com/lpn\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 - Los buenos tiempos del formato físico?   \n01:45 - El oscuro cambio en la informática   \n02:34 - La ilusión de la propiedad y el fin del disco   \n03:09 - El problema de la conexión perpetua   \n04:06 - El peligro de las suscripciones\n04:53 - La campaña \"Stop Killing Games\" y DRM   \n06:36 - ¿Qué es realmente tuyo? Las 4 libertades   \n08:07 - El papel de Steam, Proton y la alternativa de GOG   \n09:29 - Linux y Wine: La verdadera resistencia   \n10:49 - Tu sistema, tus reglas",
+      "category": "libertad",
+      "tags": [
+        "suscripciones",
+        "propiedad"
+      ],
+      "tip": "El plan para que pagues de por vida lo que “comprás”."
+    },
+    {
+      "n": 83,
+      "title": "Si ves esto, fue suerte",
+      "date": "2026-07-24",
+      "id": "kBY9N599Enk",
+      "url": "https://www.youtube.com/watch?v=kBY9N599Enk",
+      "desc": "Pasé dos años creando una herramienta 100% gratuita y de código abierto para cambiar las reglas del juego, pero las grandes plataformas intentan frenarla. Mira este video antes de que desaparezca y descubre lo que he construido para la comunidad.\n\nVideo: https://youtu.be/NsM9pEPSzcc",
+      "category": "libertad",
+      "tags": [
+        "arborito",
+        "opensource"
+      ],
+      "tip": "Herramienta libre vs plataformas que frenan lo gratuito."
+    },
+    {
+      "n": 84,
+      "title": "Lo que Nadie te Dice sobre Flatpak",
+      "date": "2026-08-01",
+      "id": "frsTmv5U_PQ",
+      "url": "https://www.youtube.com/watch?v=frsTmv5U_PQ",
+      "desc": "¿Flatpak es el .exe de Linux… o un problema disfrazado de comodidad? Te cuento qué hay detrás de las críticas.\n\n🌳 Aprende gratis, sin anuncios (100% opensource): https://www.arborito.org\n\nReddit oficial:\nhttps://www.reddit.com/r/linuxparanoobs/\n\n⏱️ Capítulos\n\n00:00 - ¿Por qué critican tanto a Flatpak?\n01:03 - El pedido de Arborito y AppImage\n01:49 - Flatpak no es lo mismo que Flathub\n02:17 - El mito: ¿necesitas Flathub?\n03:06 - ¿Por qué pesa más un Flatpak?\n03:44 - Runtimes: el truco del espacio\n04:55 - ¿Consume mucha RAM? Snap vs Flatpak\n06:21 - ¿Flatpak es malo o bueno?\n07:25 - ¿Y tú qué opinas?\n07:45 - Gracias y avance de Arborito\n08:23 - ¿Qué usas tú?",
+      "category": "apps",
+      "tags": [
+        "flatpak",
+        "flathub"
+      ],
+      "tip": "Flatpak: ¿el .exe de Linux o un problema disfrazado?"
+    }
+  ],
+  "path": [
+    {
+      "n": 2,
+      "why": "Sacá el miedo de encima"
+    },
+    {
+      "n": 17,
+      "why": "Probá sin instalar nada"
+    },
+    {
+      "n": 80,
+      "why": "Mirá el ranking actual"
+    },
+    {
+      "n": 56,
+      "why": "Si querés lo más fácil: Zorin paso a paso"
+    },
+    {
+      "n": 23,
+      "why": "Evitar errores de novato"
+    },
+    {
+      "n": 12,
+      "why": "Instalar apps sin sufrir"
+    },
+    {
+      "n": 20,
+      "why": "Si jugás: el mapa del gaming"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+# Deploy www.linuxparanoobs.com from this repo (static site).
+name: LPN Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Stage site root
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp -a index.html CNAME .nojekyll LICENSE NOTICE README.md _site/
+          cp -a assets css js _site/
+          mkdir -p _site/data
+          cp -a data/videos.json _site/data/
+          test -f _site/index.html
+          test -f _site/CNAME
+          test -f _site/.nojekyll
+          test -f _site/assets/favicon.png
+          test -f _site/js/quiz.js
+          test -f _site/data/videos.json
+
+      - name: Check GitHub Pages is enabled
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${GITHUB_REPOSITORY}/pages" >/dev/null 2>&1; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            echo "GitHub Pages is enabled."
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::GitHub Pages is not enabled on this repo yet."
+            echo "::warning::Once: Settings → Pages → Build and deployment → Source: GitHub Actions → Save"
+          fi
+
+      - name: Configure Pages
+        if: steps.pages.outputs.enabled == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        if: steps.pages.outputs.enabled == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        if: steps.pages.outputs.enabled == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
