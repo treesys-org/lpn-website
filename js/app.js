@@ -36,15 +36,178 @@ function sortedCategories(data) {
     .sort((a, b) => a.order - b.order);
 }
 
-function openPlayer(video) {
+/** Parse `m:ss` / `mm:ss` / `h:mm:ss` → seconds. */
+function timeToSeconds(stamp) {
+  const parts = String(stamp)
+    .trim()
+    .split(":")
+    .map((n) => Number(n));
+  if (parts.some((n) => !Number.isFinite(n) || n < 0)) return null;
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+  if (parts.length === 2) return parts[0] * 60 + parts[1];
+  return null;
+}
+
+const CHAPTER_LINE_RE =
+  /^\s*(\d{1,2}:\d{2}(?::\d{2})?)\s*(?:[–—\-·•:]\s*)?(.+?)\s*$/;
+const CHAPTER_HEADER_RE = /^\s*(?:[⏱🕐⏱️]\s*)?cap[ií]tulos(?:\s+del\s+video)?\s*:?\s*$/i;
+
+/**
+ * Extract YouTube-style chapter lines from a description.
+ * Returns { chapters: [{seconds, stamp, title}], body }.
+ */
+function extractChapters(desc) {
+  const raw = String(desc || "");
+  if (!raw.trim()) return { chapters: [], body: "" };
+
+  const lines = raw.split(/\r?\n/);
+  const parsed = lines.map((line, index) => {
+    if (/https?:\/\//i.test(line)) return null;
+    const m = line.match(CHAPTER_LINE_RE);
+    if (!m) return null;
+    const stamp = m[1];
+    const title = (m[2] || "").trim();
+    if (!title || /^https?:\/\//i.test(title)) return null;
+    const seconds = timeToSeconds(stamp);
+    if (seconds == null) return null;
+    return { index, seconds, stamp, title };
+  });
+
+  const headerIdx = lines.findIndex((l) => CHAPTER_HEADER_RE.test(l));
+  let chosen = [];
+
+  if (headerIdx >= 0) {
+    for (let i = headerIdx + 1; i < parsed.length; i++) {
+      if (parsed[i]) chosen.push(parsed[i]);
+      else if (chosen.length && String(lines[i] || "").trim() === "") continue;
+      else if (chosen.length) break;
+    }
+  }
+
+  if (chosen.length < 2) {
+    // Longest consecutive run of timestamp lines (tolerate blank lines).
+    let best = [];
+    let run = [];
+    for (let i = 0; i < parsed.length; i++) {
+      if (parsed[i]) {
+        run.push(parsed[i]);
+      } else if (String(lines[i] || "").trim() === "") {
+        continue;
+      } else {
+        if (run.length > best.length) best = run;
+        run = [];
+      }
+    }
+    if (run.length > best.length) best = run;
+    chosen = best;
+  }
+
+  // Need a real list (not a stray time in prose).
+  if (chosen.length < 2) return { chapters: [], body: raw.trim() };
+
+  // Prefer non-decreasing times; drop obvious outliers at the end.
+  const chapters = [];
+  let last = -1;
+  for (const ch of chosen) {
+    if (ch.seconds < last) break;
+    chapters.push(ch);
+    last = ch.seconds;
+  }
+  if (chapters.length < 2) return { chapters: [], body: raw.trim() };
+
+  const skip = new Set(chapters.map((c) => c.index));
+  if (headerIdx >= 0) skip.add(headerIdx);
+  // Drop a lone "Capítulos" label right above the block if not already matched.
+  const firstIdx = chapters[0].index;
+  if (firstIdx > 0 && /cap[ií]tulos/i.test(lines[firstIdx - 1] || "")) {
+    skip.add(firstIdx - 1);
+  }
+
+  const body = lines
+    .filter((_, i) => !skip.has(i))
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+
+  return { chapters, body };
+}
+
+function formatStamp(seconds) {
+  const s = Math.max(0, Math.floor(seconds));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  if (h > 0) {
+    return `${h}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+  }
+  return `${m}:${String(sec).padStart(2, "0")}`;
+}
+
+function embedSrc(id, startSec = 0, autoplay = false) {
+  const params = new URLSearchParams();
+  if (startSec > 0) params.set("start", String(Math.floor(startSec)));
+  if (autoplay) params.set("autoplay", "1");
+  const q = params.toString();
+  return `https://www.youtube.com/embed/${id}${q ? `?${q}` : ""}`;
+}
+
+function watchUrl(id, startSec = 0) {
+  const base = `https://www.youtube.com/watch?v=${id}`;
+  return startSec > 0 ? `${base}&t=${Math.floor(startSec)}s` : base;
+}
+
+function renderChapters(chapters, activeSec = null) {
+  const root = $("#modal-chapters");
+  if (!root) return;
+  if (!chapters.length) {
+    root.hidden = true;
+    root.innerHTML = "";
+    return;
+  }
+  root.hidden = false;
+  root.innerHTML = `<p class="modal-chapters-label">Capítulos</p><ul class="modal-chapters-list">${chapters
+    .map((ch) => {
+      const active =
+        activeSec != null && Number(activeSec) === ch.seconds ? " is-active" : "";
+      return `<li>
+        <button type="button" class="modal-chapter${active}" data-seek="${ch.seconds}">
+          <span class="modal-chapter-time">${escapeHtml(formatStamp(ch.seconds))}</span>
+          <span class="modal-chapter-title">${escapeHtml(ch.title)}</span>
+        </button>
+      </li>`;
+    })
+    .join("")}</ul>`;
+}
+
+function seekPlayer(seconds) {
+  const iframe = $("#modal-embed iframe");
+  if (!iframe) return;
+  const id = iframe.dataset.ytid;
+  if (!id) return;
+  const sec = Math.max(0, Math.floor(Number(seconds) || 0));
+  iframe.src = embedSrc(id, sec, true);
+  const yt = $("#modal-yt");
+  if (yt) yt.href = watchUrl(id, sec);
+  $$(".modal-chapter").forEach((btn) => {
+    btn.classList.toggle("is-active", Number(btn.dataset.seek) === sec);
+  });
+}
+
+function openPlayer(video, startSec = 0) {
   const modal = $("#player-modal");
   const id = ytId(video);
+  const { chapters, body } = extractChapters(video.desc || "");
+  const descText = body || video.tip || "";
+  const start = Math.max(0, Math.floor(Number(startSec) || 0));
+
   $("#modal-title").textContent = video.title;
-  $("#modal-desc").textContent = video.desc || video.tip || "";
-  $("#modal-yt").href = video.url || `https://www.youtube.com/watch?v=${id}`;
+  $("#modal-desc").textContent = descText;
+  $("#modal-desc").hidden = !descText;
+  $("#modal-yt").href = watchUrl(id, start) || video.url || "#";
   $("#modal-embed").innerHTML = id
-    ? `<iframe src="https://www.youtube.com/embed/${id}" title="${escapeAttr(video.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>`
+    ? `<iframe data-ytid="${escapeAttr(id)}" src="${escapeAttr(embedSrc(id, start, start > 0))}" title="${escapeAttr(video.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>`
     : `<p>Video no disponible.</p>`;
+  renderChapters(chapters, start > 0 ? start : chapters[0]?.seconds ?? null);
   modal.hidden = false;
   document.body.style.overflow = "hidden";
 }
@@ -52,6 +215,11 @@ function openPlayer(video) {
 function closePlayer() {
   $("#player-modal").hidden = true;
   $("#modal-embed").innerHTML = "";
+  const chapters = $("#modal-chapters");
+  if (chapters) {
+    chapters.hidden = true;
+    chapters.innerHTML = "";
+  }
   document.body.style.overflow = "";
 }
 
@@ -312,6 +480,12 @@ function bindUi() {
     if (topic) {
       const id = topic.dataset.topic;
       setFilter(state.filter === id ? "all" : id);
+      return;
+    }
+    const seekBtn = e.target.closest("[data-seek]");
+    if (seekBtn && !seekBtn.closest("[data-open]")) {
+      e.preventDefault();
+      seekPlayer(seekBtn.dataset.seek);
       return;
     }
     const openBtn = e.target.closest("[data-open]");
