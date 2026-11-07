@@ -244,18 +244,7 @@ function obfuscatedEmailHtml(eml) {
 }
 
 function publisherDetailsHtml() {
-  const lines = [
-    "linuxparanoobs.com",
-    "Inhaber: Carlos Valin",
-    "Geschäftsadresse: Oberstr. 3, 47829 Krefeld",
-    "Tel: 0 21 51 / 97 18 727",
-    "E-Mail: {EMAIL}",
-    "",
-    "Diensteanbieter nach § 5 DDG",
-    "Verantwortlich nach § 18 Abs. 2 MStV: Carlos Valin",
-    "",
-    "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
-  ];
+  const lines = ["E-Mail: {EMAIL}"];
   const parts = lines.join("\n").split("{EMAIL}");
   return parts.map(escapeHtml).join(obfuscatedEmailHtml(publisherEmail()));
 }
